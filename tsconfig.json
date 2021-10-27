@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["src/definitions", "node_modules/@types"],
+    "target": "ES2019",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./build",
+    "allowJs": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["ES2019", "es6", "dom", "dom.iterable"],
+    "declaration": true
+  },
+  "include": ["src/**/*", "tests/**/*.ts", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}

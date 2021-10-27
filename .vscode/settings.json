@@ -1,0 +1,11 @@
+{
+    "exportall.config.folderListener": [
+        "/src",
+        "/src/authorization",
+        "/src/controllers",
+        "/src/decorators",
+        "/src/errors",
+        "/src/middleware",
+        "/src/responses"
+    ]
+}
