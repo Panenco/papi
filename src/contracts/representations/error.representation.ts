@@ -1,6 +1,6 @@
 import { Exclude, Expose } from 'class-transformer';
 import { IsString } from 'class-validator';
-import { ErrorBase } from 'contracts/errors';
+import { ErrorBase } from 'contracts';
 
 @Exclude()
 export class ErrorRepresentation {

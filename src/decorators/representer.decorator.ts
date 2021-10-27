@@ -1,7 +1,6 @@
 import { HttpCode, UseInterceptor } from 'routing-controllers';
 import { ResponseSchema } from 'routing-controllers-openapi';
-import { arrayRepresenter, listRepresenter, representer } from 'utils/representers';
-import { ClassType } from 'utils/types/classType';
+import { arrayRepresenter, ClassType, listRepresenter, representer } from 'utils';
 
 export const Representer = (
   representation: ClassType<any>,

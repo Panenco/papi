@@ -14,9 +14,13 @@
     "incremental": true,
     "tsBuildInfoFile": "./build/.cache/buildInfo.json",
     "lib": ["es2019", "es6", "dom", "dom.iterable"],
-    "baseUrl": "src",
+    // "baseUrl": ".",
     "paths": {
-      "*": ["./*"]
+      "authorization": ["./src/authorization"],
+      "contracts": ["./src/contracts"],
+      "decorators": ["./src/decorators"],
+      "definitions": ["./src/definitions"],
+      "utils": ["./src/utils"]
     },
     "declaration": true
   },

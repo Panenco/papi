@@ -1,4 +1,4 @@
-import { StatusCode } from 'contracts/responses';
+import { StatusCode } from 'contracts';
 
 export class ErrorBase extends Error {
   public code: number;

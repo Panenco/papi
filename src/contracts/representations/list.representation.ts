@@ -1,6 +1,6 @@
 import { Exclude, Expose } from 'class-transformer';
 import { Nested, Numeric } from 'decorators';
-import { ClassType } from 'utils/types/classType';
+import { ClassType } from 'utils';
 
 export class ListRepresentation<T> {
   public count: number;

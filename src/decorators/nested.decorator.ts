@@ -2,7 +2,7 @@ import 'reflect-metadata';
 
 import { Type } from 'class-transformer';
 import { IsArray, IsObject, ValidateIf, ValidateNested } from 'class-validator';
-import { ClassType } from 'utils/types/classType';
+import { ClassType } from 'utils';
 
 export const Nested = <T>(type: ClassType<T>, isArray = false, childType: ClassType<any> = undefined) => {
   const nestedValidation = ValidateNested({

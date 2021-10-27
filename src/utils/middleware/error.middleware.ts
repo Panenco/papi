@@ -1,6 +1,11 @@
-import { ErrorBase, ValidationError } from 'contracts/errors';
-import { ErrorRepresentation, ValidationErrorRepresentation } from 'contracts/representations';
-import { DataResponse, ValidationErrorResponse } from 'contracts/responses';
+import {
+  DataResponse,
+  ErrorBase,
+  ErrorRepresentation,
+  ValidationError,
+  ValidationErrorRepresentation,
+  ValidationErrorResponse,
+} from 'contracts';
 import { NextFunction, Request, Response } from 'express';
 
 export const errorMiddleware = (error: Error, _: Request, response: Response, __: NextFunction) => {

@@ -1,4 +1,4 @@
-import { ValidationError } from 'contracts/errors';
+import { ValidationError } from 'contracts';
 
 import { DataResponse } from './data.response';
 import { StatusCode } from './statusCode';

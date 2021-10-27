@@ -1,6 +1,6 @@
 import { glob } from 'glob';
 import path from 'path';
-import { ClassType } from 'utils/types/classType';
+import { ClassType } from 'utils';
 
 export const importClasses = <TClassType = any>(directories: string[]): [ClassType<TClassType>] => {
   const allFiles = directories.reduce((allDirs, dir) => {

@@ -1,4 +1,4 @@
-import { ListRepresentation } from 'contracts/representations';
+import { ListRepresentation } from 'contracts';
 
 import { StatusCode } from './statusCode';
 import { SuccessResponse } from './success.response';

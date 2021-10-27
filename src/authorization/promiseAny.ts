@@ -1,4 +1,4 @@
-import { Forbidden } from 'contracts/errors';
+import { Forbidden } from 'contracts';
 
 export const promiseAny = async promises => {
   let resolve;

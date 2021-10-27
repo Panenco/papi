@@ -1,4 +1,4 @@
-import { ErrorBase } from 'contracts/errors';
+import { ErrorBase } from 'contracts';
 
 import { StatusCode } from './statusCode';
 import { SuccessResponse } from './success.response';

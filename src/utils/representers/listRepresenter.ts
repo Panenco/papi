@@ -1,7 +1,7 @@
 import { plainToClass } from 'class-transformer';
-import { createListRepresentation, ListRepresentation } from 'contracts/representations';
+import { createListRepresentation, ListRepresentation } from 'contracts';
 import { Action } from 'routing-controllers';
-import { ClassType } from 'utils/types/classType';
+import { ClassType } from 'utils';
 
 export const listRepresenter = <T>(representationType: ClassType<T>) => (_: Action, content: [any[], number]) => {
   const [items, count] = content;

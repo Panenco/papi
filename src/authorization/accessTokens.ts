@@ -1,4 +1,4 @@
-import { Unauthorized } from 'contracts/errors';
+import { Unauthorized } from 'contracts';
 import * as jwt from 'jsonwebtoken';
 
 import { IAccessToken } from './accessToken.interface';
