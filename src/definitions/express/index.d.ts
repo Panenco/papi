@@ -1,6 +1,6 @@
-import { ResponseBase } from '../../responses/responseBase';
+import { ResponseBase } from 'contracts';
 
-declare module "express" {
+declare module 'express' {
   interface Request {
     token: unknown;
     rawBody: any;

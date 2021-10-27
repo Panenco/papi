@@ -1,6 +1,6 @@
+import { Unauthorized } from 'contracts/errors';
 import * as jwt from 'jsonwebtoken';
 
-import { Unauthorized } from '../errors/unauthorized';
 import { IAccessToken } from './accessToken.interface';
 
 export const createAccessToken = async (secret: string, expiresIn: number, data: object): Promise<IAccessToken> => {

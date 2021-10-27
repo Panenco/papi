@@ -10,9 +10,16 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
-    "lib": ["ES2019", "es6", "dom", "dom.iterable"],
+    "resolveJsonModule": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./build/.cache/buildInfo.json",
+    "lib": ["es2019", "es6", "dom", "dom.iterable"],
+    "baseUrl": "src",
+    "paths": {
+      "*": ["./*"]
+    },
     "declaration": true
   },
-  "include": ["src/**/*", "tests/**/*.ts", "scripts/**/*.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]
 }

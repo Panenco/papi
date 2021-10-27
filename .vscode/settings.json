@@ -1,11 +1,32 @@
 {
-    "exportall.config.folderListener": [
-        "/src",
-        "/src/authorization",
-        "/src/controllers",
-        "/src/decorators",
-        "/src/errors",
-        "/src/middleware",
-        "/src/responses"
-    ]
+  "search.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules/**": true,
+    "build/**": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "typescriptHero.imports.organizeOnSave": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "exportall.config.folderListener": [
+    "/src",
+    "/src/authorization",
+    "/src/controllers",
+    "/src/decorators",
+    "/src/errors",
+    "/src/middleware",
+    "/src/responses",
+    "/src/utils/representers",
+    "/src/representations",
+    "/src/contracts/errors",
+    "/src/contracts/queries",
+    "/src/contracts/enums",
+    "/src/contracts"
+  ]
 }

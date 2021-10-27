@@ -1,6 +1,6 @@
-import { Forbidden } from '../errors/forbidden';
+import { Forbidden } from 'contracts/errors';
 
-export const promiseAny = async (promises) => {
+export const promiseAny = async promises => {
   let resolve;
   let reject;
 
@@ -15,17 +15,17 @@ export const promiseAny = async (promises) => {
       try {
         const res = await promise;
         resolve(res);
-        promises.forEach((p) => {
+        promises.forEach(p => {
           p.cancel();
         });
       } catch (error) {
         errors.push(error);
       }
-    })
+    }),
   );
 
   if (errors.length === promises.length) {
-    reject(new Forbidden("forbidden", errors.map((e) => e.reason).join(", ")));
+    reject(new Forbidden('forbidden', errors.map(e => e.reason).join(', ')));
   }
 
   return returner;
