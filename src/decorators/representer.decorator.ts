@@ -1,10 +1,10 @@
-import { HttpCode, UseInterceptor } from 'routing-controllers';
+import { HttpCode, OnUndefined, UseInterceptor } from 'routing-controllers';
 import { ResponseSchema } from 'routing-controllers-openapi';
 import { arrayRepresenter, ClassType, listRepresenter, representer } from 'utils';
 
 export const Representer = (
   representation: ClassType<any>,
-  statusCode = 200,
+  statusCode?: number,
   options: {
     contentType?: string;
     description?: string;
@@ -13,8 +13,8 @@ export const Representer = (
   return (target: any, key: string) => {
     [
       ResponseSchema(representation, options),
-      UseInterceptor(representer(representation)),
-      HttpCode(statusCode),
+      representation ? UseInterceptor(representer(representation)) : OnUndefined(statusCode || 204),
+      HttpCode(statusCode || 200),
     ].map(f => f(target, key));
   };
 };
