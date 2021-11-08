@@ -16,7 +16,7 @@ export const getAuthenticator = (jwtSecret: string) => {
       throw new Unauthorized('invalidToken', 'Invalid token');
     }
 
-    action.request.token = getAccessTokenData(token, process.env.jwtSecret);
+    action.request.token = getAccessTokenData(token, jwtSecret);
 
     await Promise.all(
       requirements.map(r => handleEitherRequirements(r as (IRequirement | IRequirement[])[], action.request)),
