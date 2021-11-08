@@ -9,7 +9,7 @@ import { Action } from 'routing-controllers';
  * Example2: [valid1, invalid1] => fail
  */
 export const getAuthenticator = (jwtSecret: string) => {
-  const authenticator = async (action: Action, requirements: (IRequirement | IRequirement[])[]) => {
+  const authenticator = async (action: Action, requirements: (IRequirement | IRequirement[])[] | IRequirement) => {
     const token = action.request.header('x-auth');
 
     if (!token) {
@@ -18,9 +18,8 @@ export const getAuthenticator = (jwtSecret: string) => {
 
     action.request.token = getAccessTokenData(token, jwtSecret);
 
-    await Promise.all(
-      requirements.map(r => handleEitherRequirements(r as (IRequirement | IRequirement[])[], action.request)),
-    );
+    const list = Array.isArray(requirements) ? requirements : [requirements];
+    await Promise.all(list.map(r => handleEitherRequirements(r, action.request)));
 
     return true;
   };
