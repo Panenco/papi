@@ -28,3 +28,4 @@ Development using yalc:
   - add to .gitignore:
     - .yalc
     - yalc.lock
+- After changes made: `yarn build && yalc push`
