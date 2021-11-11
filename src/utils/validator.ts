@@ -1,13 +1,9 @@
-import { validate, ValidationError as ClassValidatorValidationError } from 'class-validator';
+import { validate, ValidationError as ClassValidatorValidationError, ValidatorOptions } from 'class-validator';
 
 import { ValidationError } from '../contracts/errors/validation.error';
 
-export const validator = async (object: object, { skipMissingProperties, whitelist, forbidNonWhitelisted }) => {
-  const validationErrors: ClassValidatorValidationError[] = await validate(object, {
-    skipMissingProperties,
-    whitelist,
-    forbidNonWhitelisted,
-  });
+export const validator = async (object: object, options?: ValidatorOptions) => {
+  const validationErrors: ClassValidatorValidationError[] = await validate(object, options);
 
   if (validationErrors.length > 0) {
     const errors = validationErrors.reduce(map, {});
