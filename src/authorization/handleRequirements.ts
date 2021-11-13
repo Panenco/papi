@@ -1,12 +1,17 @@
+import { IRequirement } from 'authorization';
+import { Forbidden } from 'contracts';
 import { Request } from 'express';
 
-import { Forbidden } from '../contracts/errors/forbidden.error';
-import { IRequirement } from './requirement.interface';
-
-export const handleEitherRequirements = async (requirements: IRequirement | IRequirement[], request: Request) => {
+export const handleRequirements = async (
+  requirements: (IRequirement | IRequirement[])[] | IRequirement,
+  request: Request,
+) => {
   const list = Array.isArray(requirements) ? requirements : [requirements];
 
-  const functionsToValidate = list.map(requirement => () => requirement(request));
+  const functionsToValidate = list.map(item => async () => {
+    const items = Array.isArray(item) ? item : [item];
+    await Promise.all(items.map(r => r(request)));
+  });
   await promiseAny(functionsToValidate);
 };
 
