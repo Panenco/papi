@@ -1,8 +1,8 @@
 import { Forbidden } from 'contracts';
 
-export const promiseAny = async promises => {
-  let resolve;
-  let reject;
+export const promiseAny = async (promises: Promise<any>[] | any[]) => {
+  let resolve: (value: unknown) => void;
+  let reject: (reason?: unknown) => void;
 
   const returner = new Promise((res, rej) => {
     resolve = res;
@@ -11,13 +11,10 @@ export const promiseAny = async promises => {
 
   const errors = [];
   await Promise.all(
-    promises.map(async (promise: Promise<any>) => {
+    promises.map(async (promise: Promise<any> | any[]) => {
       try {
         const res = await promise;
         resolve(res);
-        promises.forEach(p => {
-          p.cancel();
-        });
       } catch (error) {
         errors.push(error);
       }
