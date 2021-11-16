@@ -1,6 +1,6 @@
 import { validate, ValidationError as ClassValidatorValidationError, ValidatorOptions } from 'class-validator';
 
-import { ValidationError } from '../contracts/errors/validation.error';
+import { ValidationError } from '../../contracts/errors/validation.error';
 
 export const validator = async (object: object, options?: ValidatorOptions) => {
   const validationErrors: ClassValidatorValidationError[] = await validate(object, options);
