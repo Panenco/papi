@@ -1,6 +1,6 @@
 {
   "name": "@panenco/papi",
-  "version": "0.0.6-rev14",
+  "version": "0.0.6-rev16",
   "author": "Panenco",
   "repository": "git@github.com:Panenco/papi.git",
   "license": "MIT",
@@ -9,7 +9,10 @@
   "scripts": {
     "build": "tsc && tsc-alias",
     "deploy": "yarn build & npm publish",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:clean": "yarn && yarn clean:build && yarn build",
+    "clean:build": "yarn rimraf build",
+    "clean:modules": "yarn rimraf node_modules"
   },
   "files": [
     "/build"

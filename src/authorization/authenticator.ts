@@ -1,4 +1,4 @@
-import { getAccessTokenData, handleEitherRequirements, IRequirement } from 'authorization';
+import { getAccessTokenData, handleRequirements, IRequirement } from 'authorization';
 import { Unauthorized } from 'contracts';
 import { Action } from 'routing-controllers';
 
@@ -6,8 +6,10 @@ import { Action } from 'routing-controllers';
  * Integrates with `@Authorize` decorator
  * Supply an array of groups where within a group all requirements need to be valid
  * Example1: [[valid1, valid2], [valid3, invalid1]] => success
- * Example2: [valid1, invalid1] => fail
+ * Example2: [valid1, invalid1] => success
+ * Example3: [[valid1, invalid1]] => fail
  */
+
 export const getAuthenticator = (jwtSecret: string) => {
   const authenticator = async (action: Action, requirements: (IRequirement | IRequirement[])[] | IRequirement) => {
     const token = action.request.header('x-auth');
@@ -18,8 +20,7 @@ export const getAuthenticator = (jwtSecret: string) => {
 
     action.request.token = getAccessTokenData(token, jwtSecret);
 
-    const list = Array.isArray(requirements) ? requirements : [requirements];
-    await Promise.all(list.map(r => handleEitherRequirements(r, action.request)));
+    await handleRequirements(requirements, action.request);
 
     return true;
   };
