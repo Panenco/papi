@@ -1,5 +1,5 @@
 export const stringToObject = (path: string, value: any, obj: object = {}) => {
-  const result = {};
+  const result = obj;
   const parts = path.split('.');
   let part: string;
   const last = parts.pop();
