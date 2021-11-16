@@ -1,6 +1,6 @@
+import { QueryOrder } from '@mikro-orm/core';
 import { Exclude, Expose } from 'class-transformer';
 import { IsEnum, IsOptional, IsString } from 'class-validator';
-import { Direction } from 'contracts';
 
 import { PagingQuery } from './paging.query';
 
@@ -12,7 +12,7 @@ export class SortQuery extends PagingQuery {
   public sort?: string;
 
   @Expose()
-  @IsEnum(Direction)
+  @IsEnum(QueryOrder)
   @IsOptional()
-  public direction?: Direction;
+  public direction?: QueryOrder;
 }
