@@ -1,3 +1,4 @@
+import { createListRepresentation } from 'contracts';
 import { HttpCode, OnUndefined, UseInterceptor } from 'routing-controllers';
 import { ResponseSchema } from 'routing-controllers-openapi';
 import { arrayRepresenter, ClassType, listRepresenter, representer } from 'utils';
@@ -29,7 +30,7 @@ export const ListRepresenter = (
 ) => {
   return (target: any, key: string) => {
     [
-      ResponseSchema(representation, options),
+      ResponseSchema(createListRepresentation(representation), options),
       UseInterceptor(listRepresenter(representation)),
       HttpCode(statusCode),
     ].map(f => f(target, key));
