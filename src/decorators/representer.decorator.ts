@@ -16,7 +16,7 @@ export const Representer = (
       ResponseSchema(representation, options),
       ...(representation
         ? [UseInterceptor(representer(representation)), HttpCode(statusCode || 200)]
-        : [OnUndefined(statusCode || 204)]),
+        : [OnUndefined(statusCode || 204), HttpCode(statusCode || 204)]),
     ].map(f => f(target, key));
   };
 };
