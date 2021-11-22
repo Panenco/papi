@@ -29,3 +29,8 @@ Development using yalc:
     - .yalc
     - yalc.lock
 - After changes made: `yarn build && yalc push`
+
+Stop:
+
+- In destination: `yalc remove --all`
+- In package repo: `yalc installations clean {packageName}`
