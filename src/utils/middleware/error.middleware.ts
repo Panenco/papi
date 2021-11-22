@@ -8,10 +8,12 @@ export const errorMiddleware = (error: ErrorBase, req: Request, res: Response, n
     const message: string = error.message || 'Something went wrong';
     const reason: string = error.reason || '';
 
-    console.error(
-      `[${req.method}] ${req.path} >> StatusCode:: ${status}, Reason:: ${reason}, Message:: ${message}, Payload:: `,
-      payload,
-    );
+    if (process.env.PAPIVERBOSE !== 'none') {
+      console.error(
+        `[${req.method}] ${req.path} >> StatusCode:: ${status}, Reason:: ${reason}, Message:: ${message}, Payload:: `,
+        payload,
+      );
+    }
     res.status(status).json({ message, reason, ...payload });
   } catch (error) {
     next(error);
