@@ -17,7 +17,7 @@ export const handleRequirements = async (
 
 const promiseAny = async (functionsToValidate: ((() => Promise<void>) | (() => void))[]) => {
   const errors = [];
-
+  if (!functionsToValidate?.length) return;
   await new Promise((res, rej) => {
     functionsToValidate.map(async validationFunc => {
       try {
