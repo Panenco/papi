@@ -5,6 +5,6 @@ import { Newable, validationMiddleware } from 'utils';
 export const Body = (type: Newable, bodyOptions?: BodyOptions, validatorOptions?: ValidatorOptions) => {
   return (target: Object, propertyKey: string, parameterIndex: number) => {
     UseBefore(validationMiddleware(type, 'body', validatorOptions))(target, propertyKey);
-    BodyRoutingControllers({ type, ...bodyOptions })(target, propertyKey, parameterIndex);
+    BodyRoutingControllers({ type, validate: false, ...bodyOptions })(target, propertyKey, parameterIndex);
   };
 };
