@@ -1,4 +1,4 @@
-import { ErrorBase } from 'contracts';
+import { ErrorBase, StatusCode } from 'contracts';
 import { NextFunction, Request, Response } from 'express';
 
 export const errorMiddleware = (error: ErrorBase, req: Request, res: Response, next: NextFunction) => {
@@ -14,7 +14,8 @@ export const errorMiddleware = (error: ErrorBase, req: Request, res: Response, n
         payload,
       );
     }
-    res.status(status).json({ message, reason, ...payload });
+
+    res.status(StatusCode[status] ? status : 500).json({ message, reason, ...payload });
   } catch (error) {
     next(error);
   }
