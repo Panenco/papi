@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import { IsDate } from 'class-validator';
 
-export const Date = () => {
+const PapiDate = () => {
   const isDate = IsDate();
   const typeParser = Type(() => Date);
 
@@ -10,3 +10,5 @@ export const Date = () => {
     typeParser(target, key);
   };
 };
+
+export { PapiDate as Date };
