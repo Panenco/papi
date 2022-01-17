@@ -2,6 +2,17 @@ import { IRequirement } from 'authorization';
 import { Forbidden } from 'contracts';
 import { Request } from 'express';
 
+/**
+ * Validate an array of groups of requirements where within a group all requirements need to be valid
+ *
+ * Example1: [[valid1, valid2], [valid3, invalid1]] => success
+ *
+ * Example2: [valid1, invalid1] => success
+ *
+ * Example3: [[valid1, invalid1]] => fail
+ * @param requirements List of groups to verify
+ * @param request Express request
+ */
 export const handleRequirements = async (
   requirements: (IRequirement | IRequirement[])[] | IRequirement,
   request: Request,

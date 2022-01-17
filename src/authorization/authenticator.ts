@@ -3,13 +3,14 @@ import { Unauthorized } from 'contracts';
 import { Action } from 'routing-controllers';
 
 /**
- * Integrates with `@Authorize` decorator
+ * Integrates with routing controller `@Authorize` decorator
  * Supply an array of groups where within a group all requirements need to be valid
  * Example1: [[valid1, valid2], [valid3, invalid1]] => success
  * Example2: [valid1, invalid1] => success
  * Example3: [[valid1, invalid1]] => fail
+ * @param jwtSecret JWT secret to be used to verify tokens
+ * @returns Authentication checker that should be passed into useExpressServer => authorizationChecker
  */
-
 export const getAuthenticator = (jwtSecret: string) => {
   const authenticator = async (action: Action, requirements: (IRequirement | IRequirement[])[] | IRequirement) => {
     const token = action.request.header('x-auth');
