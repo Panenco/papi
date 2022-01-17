@@ -1,6 +1,9 @@
 import { StatusCode } from 'contracts';
 import { HttpError } from 'routing-controllers';
 
+/**
+ * Base for API Error
+ */
 export class ErrorBase extends HttpError {
   public code: number;
   public reason: string;
