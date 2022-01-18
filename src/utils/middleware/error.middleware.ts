@@ -14,7 +14,10 @@ export const errorMiddleware = (error: ErrorBase, req: Request, res: Response, n
         payload,
       );
     }
-
+    if (status == 500 || !StatusCode[status]) {
+      console.error(`[${req.method}] ${req.path}`, req.body, req.query);
+      console.error(error, JSON.stringify(error));
+    }
     res.status(StatusCode[status] ? status : 500).json({ message, reason, ...payload });
   } catch (error) {
     next(error);
