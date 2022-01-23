@@ -1,6 +1,11 @@
 import { Type } from 'class-transformer';
 import { IsNumber } from 'class-validator';
 
+/**
+ * Checks if a value is a number.
+ *
+ * Transforms strings and other matching types to numbers
+ */
 export const Numeric = () => {
   const isNumber = IsNumber();
   const typeParser = Type(() => Number);

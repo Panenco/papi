@@ -3,6 +3,18 @@ import { HttpCode, OnUndefined, UseInterceptor } from 'routing-controllers';
 import { ResponseSchema } from 'routing-controllers-openapi';
 import { arrayRepresenter, ClassType, listRepresenter, representer } from 'utils';
 
+/**
+ * Decorator to be used on [[routing-controllers]] controller method
+ *
+ * Apply representation transformation on a controller method output.
+ *
+ * The result of the transformed return value will be JSON serialized as the response body.
+ *
+ * Must be applied on a controller method.
+ * @param representation class type of the representation to be used by [[class-transformer]]
+ * @param statusCode Optional Status code of the success response
+ * @param options OpenAPI options for API documentation
+ */
 export const Representer = (
   representation: ClassType<any>,
   statusCode?: number,
@@ -21,6 +33,18 @@ export const Representer = (
   };
 };
 
+/**
+ * Decorator to be used on [[routing-controllers]] controller method
+ *
+ * Apply paginated list representation transformation on a controller method output.
+ *
+ * The result of the transformed return value will be JSON serialized as the response body.
+ *
+ * Must be applied on a controller method.
+ * @param representation class type of the representation to be used by [[class-transformer]]
+ * @param statusCode Optional Status code of the success response
+ * @param options OpenAPI options for API documentation
+ */
 export const ListRepresenter = (
   representation: ClassType<any>,
   statusCode = 200,
@@ -38,6 +62,18 @@ export const ListRepresenter = (
   };
 };
 
+/**
+ * Decorator to be used on [[routing-controllers]] controller method
+ *
+ * Apply array representation transformation on a controller method output.
+ *
+ * The result of the transformed return value will be JSON serialized as the response body.
+ *
+ * Must be applied on a controller method.
+ * @param representation class type of the representation to be used by [[class-transformer]]
+ * @param statusCode Optional Status code of the success response
+ * @param options OpenAPI options for API documentation
+ */
 export const ArrayRepresenter = (
   representation: ClassType<any>,
   statusCode = 200,
