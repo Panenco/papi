@@ -1,7 +1,8 @@
+import { IAccessToken } from '../..';
+
 declare module 'express' {
   interface Request {
-    token: unknown;
-    rawBody: any;
+    token: IAccessToken;
   }
   interface Response {
     body: any;

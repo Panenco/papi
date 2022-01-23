@@ -12,7 +12,8 @@
     "lint": "eslint",
     "build:clean": "yarn && yarn clean:build && yarn build",
     "clean:build": "yarn rimraf build",
-    "clean:modules": "yarn rimraf node_modules"
+    "clean:modules": "yarn rimraf node_modules",
+    "generate-docs": "yarn typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts"
   },
   "files": [
     "/build"
@@ -43,6 +44,8 @@
     "express": "^4.17.1",
     "prettier": "^2.2.1",
     "tsc-alias": "^1.4.0",
+    "typedoc": "^0.22.11",
+    "typedoc-plugin-markdown": "^3.11.12",
     "typescript": "^4.4.4"
   },
   "publishConfig": {
