@@ -4,6 +4,9 @@ import { IsEnum, IsOptional, IsString } from 'class-validator';
 
 import { PagingQuery } from './paging.query';
 
+/**
+ * Base query validator for a sortable paged list
+ */
 @Exclude()
 export class SortQuery extends PagingQuery {
   @Expose()
