@@ -13,7 +13,7 @@ export class ListRepresentation<T> {
 }
 
 export const createListRepresentation = <T>(type: ClassType<T>): ClassType<ListRepresentation<T>> => {
-  const name = type.name.replace('Representation', ListRepresentation.name);
+  const name = `${type.name}ListRepresentation`;
 
   @Exclude()
   class ListRepresentationFactory {
