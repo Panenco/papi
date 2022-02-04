@@ -2,10 +2,10 @@
  * Capitalized query order enum
  */
 export enum QueryOrder {
-  ASC = 'ASC',
-  ASC_NULLS_LAST = 'ASC NULLS LAST',
-  ASC_NULLS_FIRST = 'ASC NULLS FIRST',
-  DESC = 'DESC',
-  DESC_NULLS_LAST = 'DESC NULLS LAST',
-  DESC_NULLS_FIRST = 'DESC NULLS FIRST',
+  ASC = 'asc',
+  ASC_NULLS_LAST = 'asc nulls last',
+  ASC_NULLS_FIRST = 'asc nulls first',
+  DESC = 'desc',
+  DESC_NULLS_LAST = 'desc nulls last',
+  DESC_NULLS_FIRST = 'desc nulls first',
 }
