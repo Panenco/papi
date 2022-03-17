@@ -1,6 +1,6 @@
 {
   "name": "@panenco/papi",
-  "version": "0.0.7-rev3",
+  "version": "0.0.7-rev9",
   "author": "Panenco",
   "repository": "git@github.com:Panenco/papi.git",
   "license": "MIT",
@@ -24,7 +24,6 @@
     "express": "^4.17.1"
   },
   "dependencies": {
-    "@mikro-orm/core": "^4.5.9",
     "jsonwebtoken": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.9.0",

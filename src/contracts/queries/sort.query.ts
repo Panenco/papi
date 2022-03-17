@@ -1,7 +1,7 @@
-import { QueryOrder } from '@mikro-orm/core';
 import { Exclude, Expose } from 'class-transformer';
 import { IsEnum, IsOptional, IsString } from 'class-validator';
 
+import { QueryOrder } from '../enum/queryOrder.enum';
 import { PagingQuery } from './paging.query';
 
 /**

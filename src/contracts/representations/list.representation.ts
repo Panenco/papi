@@ -22,7 +22,7 @@ export class ListRepresentation<T> {
  * @returns The class type of a list representation with the necessary metadata for the items array. Similar to [[ListRepresentation<TChild>]] but with metadata.
  */
 export const createListRepresentation = <TChild>(type: ClassType<TChild>): ClassType<ListRepresentation<TChild>> => {
-  const name = type.name.replace('Representation', ListRepresentation.name);
+  const name = `${type.name}ListRepresentation`;
 
   @Exclude()
   class ListRepresentationFactory {
