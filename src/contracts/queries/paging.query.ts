@@ -2,6 +2,9 @@ import { Exclude, Expose, Transform } from 'class-transformer';
 import { IsOptional } from 'class-validator';
 import { Numeric } from 'decorators';
 
+/**
+ * Base query validator for a paged list
+ */
 @Exclude()
 export class PagingQuery {
   @Expose()

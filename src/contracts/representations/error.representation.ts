@@ -2,6 +2,9 @@ import { Exclude, Expose } from 'class-transformer';
 import { IsString } from 'class-validator';
 import { ErrorBase } from 'contracts';
 
+/**
+ * Output DTO for HTTP Errors
+ */
 @Exclude()
 export class ErrorRepresentation {
   @Expose()

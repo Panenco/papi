@@ -1,11 +1,10 @@
-import { ResponseBase } from 'contracts';
+import { IAccessToken } from '../..';
 
 declare module 'express' {
   interface Request {
-    token: unknown;
-    rawBody: any;
+    token: IAccessToken;
   }
   interface Response {
-    body: ResponseBase;
+    body: any;
   }
 }

@@ -2,6 +2,11 @@ import { glob } from 'glob';
 import path from 'path';
 import { ClassType } from 'utils';
 
+/**
+ * Import all classes within a list of directories (js files)
+ * @param directories directories to scan for classes
+ * @returns Array of class types
+ */
 export const importClasses = <TClassType = any>(directories: string[]): [ClassType<TClassType>] => {
   const allFiles = directories.reduce((allDirs, dir) => {
     return allDirs.concat(glob.sync(path.normalize(dir)));
