@@ -4,6 +4,8 @@ import { Numeric } from 'decorators';
 
 /**
  * Base query validator for a paged list
+ *
+ * @category Contract
  */
 @Exclude()
 export class PagingQuery {

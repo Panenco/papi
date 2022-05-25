@@ -12,6 +12,8 @@ import { Request } from 'express';
  * Example3: [[valid1, invalid1]] => fail
  * @param requirements List of groups to verify
  * @param request Express request
+ *
+ * @category Authorization
  */
 export const handleRequirements = async (
   requirements: (IRequirement | IRequirement[])[] | IRequirement,

@@ -1,6 +1,6 @@
 # @panenco/papi
 
-## Development
+## Local Development
 
 - we need to manually install the peer dependencies for building the project
 

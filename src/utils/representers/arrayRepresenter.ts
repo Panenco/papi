@@ -3,10 +3,11 @@ import { Action } from 'routing-controllers';
 import { ClassType } from 'utils';
 
 /**
- * Helper to be used on [[routing-controllers]] middleware (UseBefore, `UseAfter`)
+ * @internal
+ * Helper to be used on routing-controllers middleware {@link UseBefore} {@link UseAfter}
  *
  * Apply representation transformation on a given input.
- * @param representationType class type of the representation to be used by `[[class-transformer]]`
+ * @param representationType class type of the representation to be used by class-transformer {@link plainToClass}
  */
 
 export const arrayRepresenter = <T>(representationType: ClassType<T>) => (_: Action, content: any[]) => {

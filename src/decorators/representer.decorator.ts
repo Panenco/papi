@@ -14,6 +14,8 @@ import { arrayRepresenter, ClassType, listRepresenter, representer } from 'utils
  * @param representation class type of the representation to be used by [[class-transformer]]
  * @param statusCode Optional Status code of the success response
  * @param options OpenAPI options for API documentation
+ *
+ * @category Decorator
  */
 export const Representer = (
   representation: ClassType<any>,
@@ -44,6 +46,8 @@ export const Representer = (
  * @param representation class type of the representation to be used by [[class-transformer]]
  * @param statusCode Optional Status code of the success response
  * @param options OpenAPI options for API documentation
+ *
+ * @category Decorator
  */
 export const ListRepresenter = (
   representation: ClassType<any>,
@@ -73,6 +77,8 @@ export const ListRepresenter = (
  * @param representation class type of the representation to be used by [[class-transformer]]
  * @param statusCode Optional Status code of the success response
  * @param options OpenAPI options for API documentation
+ *
+ * @category Decorator
  */
 export const ArrayRepresenter = (
   representation: ClassType<any>,

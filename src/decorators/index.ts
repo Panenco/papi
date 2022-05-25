@@ -1,3 +1,7 @@
+/**
+ * File doc comment for file3.ts
+ * @packageDocumentation
+ */
 export * from './body.decorator';
 export * from './conditionalExpose.decorator';
 export * from './date.decorator';

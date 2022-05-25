@@ -18,8 +18,8 @@ Base query validator for a paged list
 
 ### Properties
 
-- [limit](PagingQuery.md#limit)
 - [offset](PagingQuery.md#offset)
+- [limit](PagingQuery.md#limit)
 
 ## Constructors
 
@@ -29,20 +29,20 @@ Base query validator for a paged list
 
 ## Properties
 
-### limit
-
-• `Optional` **limit**: `number` = `20`
-
-#### Defined in
-
-[src/contracts/queries/paging.query.ts:20](https://github.com/Panenco/papi/blob/5302639/src/contracts/queries/paging.query.ts#L20)
-
-___
-
 ### offset
 
 • `Optional` **offset**: `number` = `0`
 
 #### Defined in
 
-[src/contracts/queries/paging.query.ts:14](https://github.com/Panenco/papi/blob/5302639/src/contracts/queries/paging.query.ts#L14)
+[contracts/queries/paging.query.ts:16](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/queries/paging.query.ts#L16)
+
+___
+
+### limit
+
+• `Optional` **limit**: `number` = `20`
+
+#### Defined in
+
+[contracts/queries/paging.query.ts:22](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/queries/paging.query.ts#L22)

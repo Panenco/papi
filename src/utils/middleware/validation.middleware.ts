@@ -4,10 +4,12 @@ import { NextFunction } from 'express';
 import { validator } from 'utils';
 
 /**
- * Middleware used by the [[Body]] and [[Query]] decorators but can also be directly used in an express middleware tree.
- * @param type The expected type of the body. Should be a [[class-validator]] class
+ * Middleware used by the [[`Body`]] and [[`Query`]] decorators but can also be directly used in an express middleware tree.
+ * @param type The expected type of the body. Should be a class-validator class
  * @param value location of the object to validate in the express Request (body, query, params)
- * @param validatorOptions [[class-validator]] validation options for the validation to be performed.
+ * @param options class-validator [[`ValidatorOptions]] for the validation to be performed.
+ *
+ * @category Middleware
  */
 export const validationMiddleware = (
   type: any,

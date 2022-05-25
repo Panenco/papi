@@ -19,18 +19,9 @@ Http error with status code 404
 ### Properties
 
 - [code](NotFound.md#code)
-- [httpCode](NotFound.md#httpcode)
-- [message](NotFound.md#message)
-- [name](NotFound.md#name)
-- [payload](NotFound.md#payload)
 - [reason](NotFound.md#reason)
-- [stack](NotFound.md#stack)
-- [stackTraceLimit](NotFound.md#stacktracelimit)
-
-### Methods
-
-- [captureStackTrace](NotFound.md#capturestacktrace)
-- [prepareStackTrace](NotFound.md#preparestacktrace)
+- [message](NotFound.md#message)
+- [payload](NotFound.md#payload)
 
 ## Constructors
 
@@ -52,7 +43,7 @@ Http error with status code 404
 
 #### Defined in
 
-[src/contracts/errors/notFound.error.ts:7](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/notFound.error.ts#L7)
+[contracts/errors/notFound.error.ts:9](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/notFound.error.ts#L9)
 
 ## Properties
 
@@ -66,63 +57,7 @@ Http error with status code 404
 
 #### Defined in
 
-[src/contracts/errors/errorBase.error.ts:8](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L8)
-
-___
-
-### httpCode
-
-• **httpCode**: `number`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[httpCode](ErrorBase.md#httpcode)
-
-#### Defined in
-
-node_modules/routing-controllers/types/http-error/HttpError.d.ts:7
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[message](ErrorBase.md#message)
-
-#### Defined in
-
-[src/contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L10)
-
-___
-
-### name
-
-• **name**: `string`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[name](ErrorBase.md#name)
-
-#### Defined in
-
-node_modules/typescript/lib/lib.es5.d.ts:973
-
-___
-
-### payload
-
-• `Optional` **payload**: `object`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[payload](ErrorBase.md#payload)
-
-#### Defined in
-
-[src/contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -136,88 +71,32 @@ ___
 
 #### Defined in
 
-[src/contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L9)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L11)
 
 ___
 
-### stack
+### message
 
-• `Optional` **stack**: `string`
+• **message**: `string`
 
 #### Inherited from
 
-[ErrorBase](ErrorBase.md).[stack](ErrorBase.md#stack)
+[ErrorBase](ErrorBase.md).[message](ErrorBase.md#message)
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es5.d.ts:975
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L12)
 
 ___
 
-### stackTraceLimit
+### payload
 
-▪ `Static` **stackTraceLimit**: `number`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[stackTraceLimit](ErrorBase.md#stacktracelimit)
-
-#### Defined in
-
-node_modules/@types/node/globals.d.ts:13
-
-## Methods
-
-### captureStackTrace
-
-▸ `Static` **captureStackTrace**(`targetObject`, `constructorOpt?`): `void`
-
-Create .stack property on a target object
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
-| `constructorOpt?` | `Function` |
-
-#### Returns
-
-`void`
+• `Optional` **payload**: `object`
 
 #### Inherited from
 
-[ErrorBase](ErrorBase.md).[captureStackTrace](ErrorBase.md#capturestacktrace)
+[ErrorBase](ErrorBase.md).[payload](ErrorBase.md#payload)
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:4
-
-___
-
-### prepareStackTrace
-
-▸ `Static` `Optional` **prepareStackTrace**(`err`, `stackTraces`): `any`
-
-Optional override for formatting stack traces
-
-**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
-| `stackTraces` | `CallSite`[] |
-
-#### Returns
-
-`any`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[prepareStackTrace](ErrorBase.md#preparestacktrace)
-
-#### Defined in
-
-node_modules/@types/node/globals.d.ts:11
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L13)

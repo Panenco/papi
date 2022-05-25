@@ -10,6 +10,8 @@ import { ClassType } from 'utils';
  * Transforms the nested objects to the defined type
  * @param type The type to validate and transform the nested property
  * @param isArray Whether the property is an object or an array of objects
+ *
+ * @category Decorator
  */
 export const Nested = <T>(type: ClassType<T>, isArray = false) => {
   const nestedValidation = ValidateNested({

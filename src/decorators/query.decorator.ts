@@ -10,6 +10,8 @@ import { Newable, validationMiddleware } from 'utils';
  * @param type The expected type of the query params. Should be a [[class-validator]] class
  * @param options [[routing-controllers]] param options for binding the request body
  * @param validatorOptions [[class-validator]] validation options for the validation to be performed.
+ *
+ * @category Decorator
  */
 export const Query = (type: Newable, options?: ParamOptions, validatorOptions?: ValidatorOptions) => {
   return (target: Object, propertyKey: string | symbol, parameterIndex: number) => {

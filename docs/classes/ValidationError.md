@@ -27,19 +27,10 @@ Returns a JSON error map of input validation errors
 ### Properties
 
 - [code](ValidationError.md#code)
-- [errors](ValidationError.md#errors)
-- [httpCode](ValidationError.md#httpcode)
-- [message](ValidationError.md#message)
-- [name](ValidationError.md#name)
-- [payload](ValidationError.md#payload)
 - [reason](ValidationError.md#reason)
-- [stack](ValidationError.md#stack)
-- [stackTraceLimit](ValidationError.md#stacktracelimit)
-
-### Methods
-
-- [captureStackTrace](ValidationError.md#capturestacktrace)
-- [prepareStackTrace](ValidationError.md#preparestacktrace)
+- [message](ValidationError.md#message)
+- [payload](ValidationError.md#payload)
+- [errors](ValidationError.md#errors)
 
 ## Constructors
 
@@ -65,7 +56,7 @@ Returns a JSON error map of input validation errors
 
 #### Defined in
 
-[src/contracts/errors/validation.error.ts:10](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/validation.error.ts#L10)
+[contracts/errors/validation.error.ts:12](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/validation.error.ts#L12)
 
 ## Properties
 
@@ -79,73 +70,7 @@ Returns a JSON error map of input validation errors
 
 #### Defined in
 
-[src/contracts/errors/errorBase.error.ts:8](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L8)
-
-___
-
-### errors
-
-• **errors**: { [K in string \| number \| symbol]?: string \| object \| string[] }
-
-#### Defined in
-
-[src/contracts/errors/validation.error.ts:9](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/validation.error.ts#L9)
-
-___
-
-### httpCode
-
-• **httpCode**: `number`
-
-#### Inherited from
-
-[BadRequest](BadRequest.md).[httpCode](BadRequest.md#httpcode)
-
-#### Defined in
-
-node_modules/routing-controllers/types/http-error/HttpError.d.ts:7
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Inherited from
-
-[BadRequest](BadRequest.md).[message](BadRequest.md#message)
-
-#### Defined in
-
-[src/contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L10)
-
-___
-
-### name
-
-• **name**: `string`
-
-#### Inherited from
-
-[BadRequest](BadRequest.md).[name](BadRequest.md#name)
-
-#### Defined in
-
-node_modules/typescript/lib/lib.es5.d.ts:973
-
-___
-
-### payload
-
-• `Optional` **payload**: `object`
-
-#### Inherited from
-
-[BadRequest](BadRequest.md).[payload](BadRequest.md#payload)
-
-#### Defined in
-
-[src/contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -159,88 +84,42 @@ ___
 
 #### Defined in
 
-[src/contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/5302639/src/contracts/errors/errorBase.error.ts#L9)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L11)
 
 ___
 
-### stack
+### message
 
-• `Optional` **stack**: `string`
+• **message**: `string`
 
 #### Inherited from
 
-[BadRequest](BadRequest.md).[stack](BadRequest.md#stack)
+[BadRequest](BadRequest.md).[message](BadRequest.md#message)
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es5.d.ts:975
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L12)
 
 ___
 
-### stackTraceLimit
+### payload
 
-▪ `Static` **stackTraceLimit**: `number`
-
-#### Inherited from
-
-[BadRequest](BadRequest.md).[stackTraceLimit](BadRequest.md#stacktracelimit)
-
-#### Defined in
-
-node_modules/@types/node/globals.d.ts:13
-
-## Methods
-
-### captureStackTrace
-
-▸ `Static` **captureStackTrace**(`targetObject`, `constructorOpt?`): `void`
-
-Create .stack property on a target object
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
-| `constructorOpt?` | `Function` |
-
-#### Returns
-
-`void`
+• `Optional` **payload**: `object`
 
 #### Inherited from
 
-[BadRequest](BadRequest.md).[captureStackTrace](BadRequest.md#capturestacktrace)
+[BadRequest](BadRequest.md).[payload](BadRequest.md#payload)
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:4
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L13)
 
 ___
 
-### prepareStackTrace
+### errors
 
-▸ `Static` `Optional` **prepareStackTrace**(`err`, `stackTraces`): `any`
-
-Optional override for formatting stack traces
-
-**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
-| `stackTraces` | `CallSite`[] |
-
-#### Returns
-
-`any`
-
-#### Inherited from
-
-[BadRequest](BadRequest.md).[prepareStackTrace](BadRequest.md#preparestacktrace)
+• **errors**: { [K in string \| number \| symbol]?: string \| object \| string[] }
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:11
+[contracts/errors/validation.error.ts:11](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/validation.error.ts#L11)

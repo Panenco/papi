@@ -1,5 +1,7 @@
 @panenco/papi / [Exports](modules.md)
 
+@panenco/papi / [Exports](modules.md)
+
 # @panenco/papi
 
 ## Development

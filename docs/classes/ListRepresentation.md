@@ -42,7 +42,7 @@ Output DTO for paginated lists
 
 #### Defined in
 
-[src/contracts/representations/list.representation.ts:12](https://github.com/Panenco/papi/blob/5302639/src/contracts/representations/list.representation.ts#L12)
+[contracts/representations/list.representation.ts:14](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/representations/list.representation.ts#L14)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Output DTO for paginated lists
 
 #### Defined in
 
-[src/contracts/representations/list.representation.ts:9](https://github.com/Panenco/papi/blob/5302639/src/contracts/representations/list.representation.ts#L9)
+[contracts/representations/list.representation.ts:11](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/representations/list.representation.ts#L11)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/contracts/representations/list.representation.ts:10](https://github.com/Panenco/papi/blob/5302639/src/contracts/representations/list.representation.ts#L10)
+[contracts/representations/list.representation.ts:12](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/representations/list.representation.ts#L12)

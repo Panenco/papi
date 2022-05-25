@@ -8,20 +8,10 @@ Base data for Authorization token data response
 
 ### Properties
 
-- [expiresIn](IAccessToken.md#expiresin)
 - [token](IAccessToken.md#token)
+- [expiresIn](IAccessToken.md#expiresin)
 
 ## Properties
-
-### expiresIn
-
-• **expiresIn**: `number`
-
-#### Defined in
-
-[src/authorization/accessToken.interface.ts:6](https://github.com/Panenco/papi/blob/5302639/src/authorization/accessToken.interface.ts#L6)
-
-___
 
 ### token
 
@@ -29,4 +19,14 @@ ___
 
 #### Defined in
 
-[src/authorization/accessToken.interface.ts:5](https://github.com/Panenco/papi/blob/5302639/src/authorization/accessToken.interface.ts#L5)
+[authorization/accessToken.interface.ts:7](https://github.com/Panenco/papi/blob/556ec9d/src/authorization/accessToken.interface.ts#L7)
+
+___
+
+### expiresIn
+
+• **expiresIn**: `number`
+
+#### Defined in
+
+[authorization/accessToken.interface.ts:8](https://github.com/Panenco/papi/blob/556ec9d/src/authorization/accessToken.interface.ts#L8)

@@ -18,10 +18,10 @@ Base query validator for a sortable paged list
 
 ### Properties
 
-- [direction](SortQuery.md#direction)
-- [limit](SortQuery.md#limit)
 - [offset](SortQuery.md#offset)
+- [limit](SortQuery.md#limit)
 - [sort](SortQuery.md#sort)
+- [direction](SortQuery.md#direction)
 
 ## Constructors
 
@@ -35,13 +35,17 @@ Base query validator for a sortable paged list
 
 ## Properties
 
-### direction
+### offset
 
-• `Optional` **direction**: `QueryOrder`
+• `Optional` **offset**: `number` = `0`
+
+#### Inherited from
+
+[PagingQuery](PagingQuery.md).[offset](PagingQuery.md#offset)
 
 #### Defined in
 
-[src/contracts/queries/sort.query.ts:20](https://github.com/Panenco/papi/blob/5302639/src/contracts/queries/sort.query.ts#L20)
+[contracts/queries/paging.query.ts:16](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/queries/paging.query.ts#L16)
 
 ___
 
@@ -55,21 +59,7 @@ ___
 
 #### Defined in
 
-[src/contracts/queries/paging.query.ts:20](https://github.com/Panenco/papi/blob/5302639/src/contracts/queries/paging.query.ts#L20)
-
-___
-
-### offset
-
-• `Optional` **offset**: `number` = `0`
-
-#### Inherited from
-
-[PagingQuery](PagingQuery.md).[offset](PagingQuery.md#offset)
-
-#### Defined in
-
-[src/contracts/queries/paging.query.ts:14](https://github.com/Panenco/papi/blob/5302639/src/contracts/queries/paging.query.ts#L14)
+[contracts/queries/paging.query.ts:22](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/queries/paging.query.ts#L22)
 
 ___
 
@@ -79,4 +69,14 @@ ___
 
 #### Defined in
 
-[src/contracts/queries/sort.query.ts:15](https://github.com/Panenco/papi/blob/5302639/src/contracts/queries/sort.query.ts#L15)
+[contracts/queries/sort.query.ts:17](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/queries/sort.query.ts#L17)
+
+___
+
+### direction
+
+• `Optional` **direction**: [`QueryOrder`](../enums/QueryOrder.md)
+
+#### Defined in
+
+[contracts/queries/sort.query.ts:22](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/queries/sort.query.ts#L22)
