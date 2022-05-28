@@ -3,6 +3,7 @@ import { Forbidden } from 'contracts';
 import { Request } from 'express';
 
 /**
+ * @internal
  * Validate an array of groups of requirements where within a group all requirements need to be valid
  *
  * Example1: [[valid1, valid2], [valid3, invalid1]] => success

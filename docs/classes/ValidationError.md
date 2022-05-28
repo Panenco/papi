@@ -56,7 +56,7 @@ Returns a JSON error map of input validation errors
 
 #### Defined in
 
-[contracts/errors/validation.error.ts:12](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/validation.error.ts#L12)
+[contracts/errors/validation.error.ts:12](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/validation.error.ts#L12)
 
 ## Properties
 
@@ -70,7 +70,7 @@ Returns a JSON error map of input validation errors
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L11)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L12)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L13)
 
 ___
 
@@ -122,4 +122,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/validation.error.ts:11](https://github.com/Panenco/papi/blob/556ec9d/src/contracts/errors/validation.error.ts#L11)
+[contracts/errors/validation.error.ts:11](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/validation.error.ts#L11)
