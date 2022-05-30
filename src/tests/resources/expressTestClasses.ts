@@ -25,15 +25,25 @@ export class SimpleResponse {
 export class DevController {
   @Post('/validations')
   @Representer(SimpleResponse)
-  validate(@Body() body: ValidationBody): SimpleResponse {
+  validate(@Body() body: ValidationBody) {
     return {
       res: body.val,
+      stripped: 'stripped',
     };
+  }
+
+  @Post('/asyncresponse')
+  @Representer(SimpleResponse)
+  async asyncResponse(): Promise<SimpleResponse> {
+    return Promise.resolve({
+      res: 'async test',
+      stripped: 'stripped',
+    });
   }
 
   @Get('/empty')
   @Representer(null)
-  empty(@Query() query: ValidationBody) {
+  empty(@Query() query: ValidationBody): void {
     return null;
   }
 }
