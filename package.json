@@ -16,7 +16,8 @@
     "generate-docs": "yarn typedoc",
     "watchDeletedFiles": "ts-node scripts/deletedFileWatcher.script.ts",
     "watch": "tsc -w",
-    "test": "NODE_PATH=./build mocha -r source-map-support/register build/tests/**/*.test.js --exit"
+    "test": "NODE_PATH=./build mocha -r source-map-support/register build/tests/**/*.test.js --exit",
+    "coverage": "nyc yarn test"
   },
   "peerDependencies": {
     "class-transformer": "^0.5.1",
@@ -49,6 +50,7 @@
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
     "prettier": "^2.6.2",
     "source-map-support": "^0.5.21",
     "supertest": "^6.2.3",
