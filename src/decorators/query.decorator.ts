@@ -7,16 +7,16 @@ import { Newable, validationMiddleware } from 'utils';
  * Allows to inject and validate a request query params to the controller action parameter.
  *
  * Must be applied on a controller action parameter.
- * @param type The expected type of the query params. Should be a [[class-validator]] class
- * @param options [[routing-controllers]] param options for binding the request body
+ * @param type Override inferred type, set the expected type of the query
+ * @param options [[routing-controllers]] param options for binding the request query
  * @param validatorOptions [[class-validator]] validation options for the validation to be performed.
  *
  * @category Decorator
  */
-export const Query = (type: Newable, options?: ParamOptions, validatorOptions?: ValidatorOptions) => {
+export const Query = (options: ParamOptions = {}, validatorOptions?: ValidatorOptions, type?: Newable) => {
   return (target: Object, propertyKey: string | symbol, parameterIndex: number) => {
-    [(UseBefore(validationMiddleware(type, 'query', validatorOptions)), QueryParams(options))].map(f =>
-      f(target, propertyKey, parameterIndex),
-    );
+    const mdType = type ?? Reflect.getMetadata('design:paramtypes', target, propertyKey)?.[parameterIndex];
+    UseBefore(validationMiddleware(mdType, 'query', validatorOptions))(target, propertyKey);
+    QueryParams({ validate: false, ...options })(target, propertyKey, parameterIndex);
   };
 };

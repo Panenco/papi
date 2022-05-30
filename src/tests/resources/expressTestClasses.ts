@@ -1,8 +1,7 @@
 import { Exclude, Expose } from 'class-transformer';
 import { IsString, MinLength } from 'class-validator';
-import { JsonController, Post } from 'routing-controllers';
+import { Get, JsonController, Post } from 'routing-controllers';
 
-import { ErrorRepresentation } from '../../contracts/representations';
 import { Body } from '../../decorators/body.decorator';
 import { Query } from '../../decorators/query.decorator';
 import { Representer } from '../../decorators/representer.decorator';
@@ -15,20 +14,26 @@ export class ValidationBody {
   public val: string;
 }
 
+@Exclude()
+export class SimpleResponse {
+  @Expose()
+  @IsString()
+  public res: string;
+}
+
 @JsonController('/tests')
 export class DevController {
   @Post('/validations')
-  @Representer(ErrorRepresentation)
-  validate(@Body() body: ValidationBody): ErrorRepresentation {
+  @Representer(SimpleResponse)
+  validate(@Body() body: ValidationBody): SimpleResponse {
     return {
-      message: body.val,
-      reason: 'test',
+      res: body.val,
     };
   }
 
-  @Post('/empty')
+  @Get('/empty')
   @Representer(null)
-  empty(@Query(ValidationBody) query: ValidationBody) {
+  empty(@Query() query: ValidationBody) {
     return null;
   }
 }
