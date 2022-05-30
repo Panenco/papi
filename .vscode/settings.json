@@ -2,7 +2,10 @@
   "mochaExplorer.files": "build/tests/**/*.test.js",
   "mochaExplorer.watch": "build/tests/**/*.test.js",
   "mochaExplorer.require": ["source-map-support/register"],
-  "mochaExplorer.env": { "NODE_ENV": "test", "NODE_PATH": "./build" },
+  "mochaExplorer.monkeyPatch": true,
+  "mochaExplorer.env": { "NODE_PATH": "./build" },
+  "mochaExplorer.ui": "bdd",
+  "mochaExplorer.timeout": 30000,
   "testExplorer.mergeSuites": true,
   "search.exclude": {
     "**/.git": true,
@@ -19,5 +22,6 @@
   "files.exclude": {
     "**/node_modules": true
   },
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.tabSize": 2
 }
