@@ -22,16 +22,60 @@ Base for API Error
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](ErrorBase.md#constructor)
-
 ### Properties
 
 - [code](ErrorBase.md#code)
 - [reason](ErrorBase.md#reason)
 - [message](ErrorBase.md#message)
 - [payload](ErrorBase.md#payload)
+
+### Constructors
+
+- [constructor](ErrorBase.md#constructor)
+
+## Properties
+
+### code
+
+• **code**: `number`
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/284361b/src/contracts/errors/errorBase.error.ts#L10)
+
+___
+
+### reason
+
+• **reason**: `string`
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/284361b/src/contracts/errors/errorBase.error.ts#L11)
+
+___
+
+### message
+
+• **message**: `string`
+
+#### Overrides
+
+HttpError.message
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/284361b/src/contracts/errors/errorBase.error.ts#L12)
+
+___
+
+### payload
+
+• `Optional` **payload**: `object`
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/284361b/src/contracts/errors/errorBase.error.ts#L13)
 
 ## Constructors
 
@@ -54,48 +98,4 @@ HttpError.constructor
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:15](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L15)
-
-## Properties
-
-### code
-
-• **code**: `number`
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L10)
-
-___
-
-### reason
-
-• **reason**: `string`
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L11)
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Overrides
-
-HttpError.message
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L12)
-
-___
-
-### payload
-
-• `Optional` **payload**: `object`
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:15](https://github.com/Panenco/papi/blob/284361b/src/contracts/errors/errorBase.error.ts#L15)

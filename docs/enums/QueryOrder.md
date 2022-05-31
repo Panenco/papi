@@ -6,7 +6,7 @@ Capitalized query order enum
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [ASC](QueryOrder.md#asc)
 - [ASC\_NULLS\_LAST](QueryOrder.md#asc_nulls_last)
@@ -15,62 +15,62 @@ Capitalized query order enum
 - [DESC\_NULLS\_LAST](QueryOrder.md#desc_nulls_last)
 - [DESC\_NULLS\_FIRST](QueryOrder.md#desc_nulls_first)
 
-## Enumeration members
+## Enumeration Members
 
 ### ASC
 
-• **ASC** = `"asc"`
+• **ASC**
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:7](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/enum/queryOrder.enum.ts#L7)
+[contracts/enum/queryOrder.enum.ts:7](https://github.com/Panenco/papi/blob/284361b/src/contracts/enum/queryOrder.enum.ts#L7)
 
 ___
 
 ### ASC\_NULLS\_LAST
 
-• **ASC\_NULLS\_LAST** = `"asc nulls last"`
+• **ASC\_NULLS\_LAST**
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:8](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/enum/queryOrder.enum.ts#L8)
+[contracts/enum/queryOrder.enum.ts:8](https://github.com/Panenco/papi/blob/284361b/src/contracts/enum/queryOrder.enum.ts#L8)
 
 ___
 
 ### ASC\_NULLS\_FIRST
 
-• **ASC\_NULLS\_FIRST** = `"asc nulls first"`
+• **ASC\_NULLS\_FIRST**
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:9](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/enum/queryOrder.enum.ts#L9)
+[contracts/enum/queryOrder.enum.ts:9](https://github.com/Panenco/papi/blob/284361b/src/contracts/enum/queryOrder.enum.ts#L9)
 
 ___
 
 ### DESC
 
-• **DESC** = `"desc"`
+• **DESC**
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:10](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/enum/queryOrder.enum.ts#L10)
+[contracts/enum/queryOrder.enum.ts:10](https://github.com/Panenco/papi/blob/284361b/src/contracts/enum/queryOrder.enum.ts#L10)
 
 ___
 
 ### DESC\_NULLS\_LAST
 
-• **DESC\_NULLS\_LAST** = `"desc nulls last"`
+• **DESC\_NULLS\_LAST**
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:11](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/enum/queryOrder.enum.ts#L11)
+[contracts/enum/queryOrder.enum.ts:11](https://github.com/Panenco/papi/blob/284361b/src/contracts/enum/queryOrder.enum.ts#L11)
 
 ___
 
 ### DESC\_NULLS\_FIRST
 
-• **DESC\_NULLS\_FIRST** = `"desc nulls first"`
+• **DESC\_NULLS\_FIRST**
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:12](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/enum/queryOrder.enum.ts#L12)
+[contracts/enum/queryOrder.enum.ts:12](https://github.com/Panenco/papi/blob/284361b/src/contracts/enum/queryOrder.enum.ts#L12)

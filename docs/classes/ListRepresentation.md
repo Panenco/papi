@@ -12,14 +12,34 @@ Output DTO for paginated lists
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](ListRepresentation.md#constructor)
-
 ### Properties
 
 - [count](ListRepresentation.md#count)
 - [items](ListRepresentation.md#items)
+
+### Constructors
+
+- [constructor](ListRepresentation.md#constructor)
+
+## Properties
+
+### count
+
+• **count**: `number`
+
+#### Defined in
+
+[contracts/representations/list.representation.ts:11](https://github.com/Panenco/papi/blob/284361b/src/contracts/representations/list.representation.ts#L11)
+
+___
+
+### items
+
+• **items**: `T`[]
+
+#### Defined in
+
+[contracts/representations/list.representation.ts:12](https://github.com/Panenco/papi/blob/284361b/src/contracts/representations/list.representation.ts#L12)
 
 ## Constructors
 
@@ -42,24 +62,4 @@ Output DTO for paginated lists
 
 #### Defined in
 
-[contracts/representations/list.representation.ts:14](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/representations/list.representation.ts#L14)
-
-## Properties
-
-### count
-
-• **count**: `number`
-
-#### Defined in
-
-[contracts/representations/list.representation.ts:11](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/representations/list.representation.ts#L11)
-
-___
-
-### items
-
-• **items**: `T`[]
-
-#### Defined in
-
-[contracts/representations/list.representation.ts:12](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/representations/list.representation.ts#L12)
+[contracts/representations/list.representation.ts:14](https://github.com/Panenco/papi/blob/284361b/src/contracts/representations/list.representation.ts#L14)

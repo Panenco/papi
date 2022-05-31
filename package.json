@@ -1,11 +1,13 @@
 {
   "name": "@panenco/papi",
-  "version": "0.0.8",
-  "author": "Panenco",
+  "version": "0.2.4",
+  "description": "Panenco papi",
+  "author": "Panenco <info@panenco.com>",
   "repository": "git@github.com:Panenco/papi.git",
   "license": "MIT",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "private": false,
   "scripts": {
     "build": "tsc && tsc-alias",
     "lint": "eslint",
