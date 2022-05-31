@@ -1,0 +1,36 @@
+name: Update docs and bump version
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Use Node.js v16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: Install
+        run: yarn
+      - name: Build app
+        run: yarn build
+      - name: Generate Docs
+        run: yarn generate-docs
+
+      - name: Commit updates
+        uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: 'CI: update generated docs'
+
+      - name: Automated Version Bump
+        uses: phips28/gh-action-bump-version@master
+        with:
+          tag-prefix: 'v'
+          commit-message: 'CI: bumps version to {{version}}'
