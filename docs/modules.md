@@ -94,7 +94,7 @@ An object containing the expiry time and the generated token
 
 #### Defined in
 
-[authorization/accessTokens.ts:15](https://github.com/Panenco/papi/blob/284361b/src/authorization/accessTokens.ts#L15)
+[authorization/accessTokens.ts:15](https://github.com/Panenco/papi/blob/fde2f7d/src/authorization/accessTokens.ts#L15)
 
 ___
 
@@ -119,7 +119,7 @@ Decoded token data
 
 #### Defined in
 
-[authorization/accessTokens.ts:30](https://github.com/Panenco/papi/blob/284361b/src/authorization/accessTokens.ts#L30)
+[authorization/accessTokens.ts:30](https://github.com/Panenco/papi/blob/fde2f7d/src/authorization/accessTokens.ts#L30)
 
 ___
 
@@ -160,7 +160,7 @@ Authentication checker that should be passed into useExpressServer => authorizat
 
 #### Defined in
 
-[authorization/authenticator.ts:16](https://github.com/Panenco/papi/blob/284361b/src/authorization/authenticator.ts#L16)
+[authorization/authenticator.ts:16](https://github.com/Panenco/papi/blob/fde2f7d/src/authorization/authenticator.ts#L16)
 
 ___
 
@@ -193,7 +193,7 @@ The class type of a list representation with the necessary metadata for the item
 
 #### Defined in
 
-[contracts/representations/list.representation.ts:28](https://github.com/Panenco/papi/blob/284361b/src/contracts/representations/list.representation.ts#L28)
+[contracts/representations/list.representation.ts:28](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/representations/list.representation.ts#L28)
 
 ___
 
@@ -235,7 +235,7 @@ Must be applied on a controller action parameter.
 
 #### Defined in
 
-[decorators/body.decorator.ts:20](https://github.com/Panenco/papi/blob/284361b/src/decorators/body.decorator.ts#L20)
+[decorators/body.decorator.ts:20](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/body.decorator.ts#L20)
 
 ___
 
@@ -270,7 +270,7 @@ Extended version of [[class-transformer]][[Expose]] decorator where a condition 
 
 #### Defined in
 
-[decorators/conditionalExpose.decorator.ts:11](https://github.com/Panenco/papi/blob/284361b/src/decorators/conditionalExpose.decorator.ts#L11)
+[decorators/conditionalExpose.decorator.ts:11](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/conditionalExpose.decorator.ts#L11)
 
 ___
 
@@ -303,7 +303,7 @@ Transforms string dates into JS Dates.
 
 #### Defined in
 
-[decorators/date.decorator.ts:13](https://github.com/Panenco/papi/blob/284361b/src/decorators/date.decorator.ts#L13)
+[decorators/date.decorator.ts:13](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/date.decorator.ts#L13)
 
 ___
 
@@ -338,7 +338,7 @@ Decorator that produces a default value for non-existing or empty properties whe
 
 #### Defined in
 
-[decorators/defaultValue.decorator.ts:9](https://github.com/Panenco/papi/blob/284361b/src/decorators/defaultValue.decorator.ts#L9)
+[decorators/defaultValue.decorator.ts:9](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/defaultValue.decorator.ts#L9)
 
 ___
 
@@ -354,7 +354,7 @@ Transforms strings to lowercase.
 
 #### Defined in
 
-[decorators/lower.decorator.ts:8](https://github.com/Panenco/papi/blob/284361b/src/decorators/lower.decorator.ts#L8)
+[decorators/lower.decorator.ts:8](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/lower.decorator.ts#L8)
 
 ___
 
@@ -398,7 +398,7 @@ Transforms the nested objects to the defined type
 
 #### Defined in
 
-[decorators/nested.decorator.ts:16](https://github.com/Panenco/papi/blob/284361b/src/decorators/nested.decorator.ts#L16)
+[decorators/nested.decorator.ts:16](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/nested.decorator.ts#L16)
 
 ___
 
@@ -429,7 +429,7 @@ Transforms strings and other matching types to numbers
 
 #### Defined in
 
-[decorators/numeric.decorator.ts:11](https://github.com/Panenco/papi/blob/284361b/src/decorators/numeric.decorator.ts#L11)
+[decorators/numeric.decorator.ts:11](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/numeric.decorator.ts#L11)
 
 ___
 
@@ -469,7 +469,7 @@ Must be applied on a controller action parameter.
 
 #### Defined in
 
-[decorators/query.decorator.ts:16](https://github.com/Panenco/papi/blob/284361b/src/decorators/query.decorator.ts#L16)
+[decorators/query.decorator.ts:16](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/query.decorator.ts#L16)
 
 ___
 
@@ -514,7 +514,7 @@ Must be applied on a controller method.
 
 #### Defined in
 
-[decorators/representer.decorator.ts:20](https://github.com/Panenco/papi/blob/284361b/src/decorators/representer.decorator.ts#L20)
+[decorators/representer.decorator.ts:20](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/representer.decorator.ts#L20)
 
 ___
 
@@ -559,7 +559,7 @@ Must be applied on a controller method.
 
 #### Defined in
 
-[decorators/representer.decorator.ts:52](https://github.com/Panenco/papi/blob/284361b/src/decorators/representer.decorator.ts#L52)
+[decorators/representer.decorator.ts:52](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/representer.decorator.ts#L52)
 
 ___
 
@@ -604,7 +604,7 @@ Must be applied on a controller method.
 
 #### Defined in
 
-[decorators/representer.decorator.ts:83](https://github.com/Panenco/papi/blob/284361b/src/decorators/representer.decorator.ts#L83)
+[decorators/representer.decorator.ts:83](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/representer.decorator.ts#L83)
 
 ___
 
@@ -622,7 +622,7 @@ Transforms string boolean into JS boolean.
 
 #### Defined in
 
-[decorators/transformBooleanString.decorator.ts:10](https://github.com/Panenco/papi/blob/284361b/src/decorators/transformBooleanString.decorator.ts#L10)
+[decorators/transformBooleanString.decorator.ts:10](https://github.com/Panenco/papi/blob/fde2f7d/src/decorators/transformBooleanString.decorator.ts#L10)
 
 ___
 
@@ -654,7 +654,7 @@ Array of class types
 
 #### Defined in
 
-[utils/helpers/importClasses.ts:12](https://github.com/Panenco/papi/blob/284361b/src/utils/helpers/importClasses.ts#L12)
+[utils/helpers/importClasses.ts:12](https://github.com/Panenco/papi/blob/fde2f7d/src/utils/helpers/importClasses.ts#L12)
 
 ___
 
@@ -680,7 +680,7 @@ The object that has been created from the path. Ex. ```{ root: { child: { subChi
 
 #### Defined in
 
-[utils/helpers/stringToObject.ts:10](https://github.com/Panenco/papi/blob/284361b/src/utils/helpers/stringToObject.ts#L10)
+[utils/helpers/stringToObject.ts:10](https://github.com/Panenco/papi/blob/fde2f7d/src/utils/helpers/stringToObject.ts#L10)
 
 ___
 
@@ -703,7 +703,7 @@ Validates an object with class-validator [[`validate`]]
 
 #### Defined in
 
-[utils/helpers/validator.ts:12](https://github.com/Panenco/papi/blob/284361b/src/utils/helpers/validator.ts#L12)
+[utils/helpers/validator.ts:12](https://github.com/Panenco/papi/blob/fde2f7d/src/utils/helpers/validator.ts#L12)
 
 ___
 
@@ -732,7 +732,7 @@ Errors extended from [[`ErrorBase`]] will be handled and serialized to the respo
 
 #### Defined in
 
-[utils/middleware/error.middleware.ts:15](https://github.com/Panenco/papi/blob/284361b/src/utils/middleware/error.middleware.ts#L15)
+[utils/middleware/error.middleware.ts:15](https://github.com/Panenco/papi/blob/fde2f7d/src/utils/middleware/error.middleware.ts#L15)
 
 ## Authorization Type Aliases
 
@@ -760,4 +760,4 @@ Implementation should validate required check and throw [Unauthorized](classes/U
 
 #### Defined in
 
-[authorization/requirement.interface.ts:10](https://github.com/Panenco/papi/blob/284361b/src/authorization/requirement.interface.ts#L10)
+[authorization/requirement.interface.ts:10](https://github.com/Panenco/papi/blob/fde2f7d/src/authorization/requirement.interface.ts#L10)

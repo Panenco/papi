@@ -27,7 +27,7 @@ Available status codes
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:7](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L7)
+[contracts/responses/statusCode.ts:7](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L7)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:8](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L8)
+[contracts/responses/statusCode.ts:8](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L8)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:9](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L9)
+[contracts/responses/statusCode.ts:9](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L9)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:10](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L10)
+[contracts/responses/statusCode.ts:10](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L10)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:11](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L11)
+[contracts/responses/statusCode.ts:11](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L11)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:12](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L12)
+[contracts/responses/statusCode.ts:12](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L12)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:13](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L13)
+[contracts/responses/statusCode.ts:13](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L13)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:14](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L14)
+[contracts/responses/statusCode.ts:14](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L14)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:15](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L15)
+[contracts/responses/statusCode.ts:15](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L15)
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:16](https://github.com/Panenco/papi/blob/284361b/src/contracts/responses/statusCode.ts#L16)
+[contracts/responses/statusCode.ts:16](https://github.com/Panenco/papi/blob/fde2f7d/src/contracts/responses/statusCode.ts#L16)
