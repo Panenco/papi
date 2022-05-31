@@ -6,7 +6,7 @@ import { useExpressServer } from 'routing-controllers';
 import supertest from 'supertest';
 
 import { StatusCode } from '../../contracts/responses';
-import { DevController } from '../resources/expressTestClasses';
+import { ApiController } from '../resources/api';
 
 describe('Integration tests', () => {
   describe('Output validation tests', () => {
@@ -15,7 +15,7 @@ describe('Integration tests', () => {
       const app = express();
       app.use(express.json());
       useExpressServer(app, {
-        controllers: [DevController],
+        controllers: [ApiController],
         defaultErrorHandler: false,
       });
       request = supertest(app);
@@ -37,7 +37,19 @@ describe('Integration tests', () => {
       const res = await request.get(`/tests/empty`).query({ val: 'test' }).expect(StatusCode.noContent);
       expect(res.body).deep.eq({});
     });
+
+    it('Should get list response', async () => {
+      const res = await request.get(`/tests/list`).expect(StatusCode.ok);
+      expect(res.body.count).equal(10);
+      expect(res.body.items[0].stripped).undefined;
+      expect(res.body.items[0].res).equal('response');
+      expect(res.body.items[0].lower).equal('upper case');
+    });
+
+    it('Should get array response', async () => {
+      const res = await request.get(`/tests/array`).expect(StatusCode.ok);
+      expect(res.body[0].stripped).undefined;
+      expect(res.body[0].res).equal('response');
+    });
   });
 });
-
-console.log('test2');

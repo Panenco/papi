@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { plainToInstance } from 'class-transformer';
 
 import { validator } from '../../utils/helpers/validator';
-import { ValidationBody } from '../resources/expressTestClasses';
+import { ValidationBody } from '../resources/api';
 import { expectThrowsAsync } from '../utils/expectThrowsAsync';
 
 describe('Unit tests', () => {

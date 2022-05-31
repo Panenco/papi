@@ -5,10 +5,10 @@ import { IsString } from 'class-validator';
 import { ConditionalExpose } from '../../decorators/conditionalExpose.decorator';
 import { Date } from '../../decorators/date.decorator';
 import { DefaultValue } from '../../decorators/defaultValue.decorator';
+import { Lower } from '../../decorators/lower.decorator';
 import { Nested } from '../../decorators/nested.decorator';
 import { Numeric } from '../../decorators/numeric.decorator';
 import { TransformBooleanString } from '../../decorators/transformBooleanString.decorator';
-import { Lower } from '../../decorators/transformLower.decorator';
 
 @Exclude()
 class NestedContract {

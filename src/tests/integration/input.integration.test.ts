@@ -7,7 +7,7 @@ import supertest from 'supertest';
 
 import { StatusCode } from '../../contracts/responses';
 import { errorMiddleware } from '../../utils/middleware/error.middleware';
-import { DevController } from '../resources/expressTestClasses';
+import { ApiController } from '../resources/api';
 
 describe('Integration tests', () => {
   describe('Input validation tests', () => {
@@ -17,7 +17,7 @@ describe('Integration tests', () => {
       app.use(express.json());
       app.use(express.urlencoded({ extended: true }));
       useExpressServer(app, {
-        controllers: [DevController],
+        controllers: [ApiController],
         defaultErrorHandler: false,
       });
       app.use(errorMiddleware);
@@ -46,5 +46,3 @@ describe('Integration tests', () => {
     });
   });
 });
-
-console.log('test2');

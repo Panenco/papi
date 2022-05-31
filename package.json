@@ -1,6 +1,6 @@
 {
   "name": "@panenco/papi",
-  "version": "0.0.7-rev14",
+  "version": "0.0.8",
   "author": "Panenco",
   "repository": "git@github.com:Panenco/papi.git",
   "license": "MIT",
@@ -38,8 +38,8 @@
     "@types/mocha": "^9.1.1",
     "@types/node": "^16.11.7",
     "@types/supertest": "^2.0.12",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
     "chai": "^4.3.6",
     "chokidar": "^3.5.3",
     "class-transformer": "^0.5.1",
@@ -56,7 +56,7 @@
     "supertest": "^6.2.3",
     "ts-node": "^10.8.0",
     "tsc-alias": "^1.6.7",
-    "typedoc": "^0.22.15",
+    "typedoc": "^0.22.16",
     "typedoc-plugin-markdown": "^3.12.1",
     "typescript": "^4.7.2"
   },

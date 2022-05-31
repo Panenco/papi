@@ -29,4 +29,4 @@ const removeBuildFile = (globPattern: string) => {
 
 const watcher = chokidar.watch(basePath);
 watcher.on('unlink', removeBuildFile);
-console.log('Watching for removed files');
+console.log(`Watching for removed files in ${basePath}`);

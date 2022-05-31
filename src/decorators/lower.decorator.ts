@@ -5,6 +5,4 @@ import { Transform } from 'class-transformer';
  *
  * @category Decorator
  */
-export const Lower = () => {
-  return Transform(({ value }) => value?.toLowerCase());
-};
+export const Lower = () => Transform(({ value }) => value?.toLowerCase());
