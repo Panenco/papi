@@ -8,7 +8,6 @@
   "types": "build/index.d.ts",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "deploy": "yarn build:clean & npm publish",
     "lint": "eslint",
     "build:clean": "yarn && yarn clean:build && yarn build",
     "clean:build": "yarn rimraf build",
@@ -59,9 +58,6 @@
     "typedoc": "^0.22.16",
     "typedoc-plugin-markdown": "^3.12.1",
     "typescript": "^4.7.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "engines": {
     "node": "16.x"
