@@ -1,0 +1,31 @@
+name: CI PR
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Use Node.js v16
+        uses: actions/setup-node@v1
+        env:
+          RUNNER_TEMP: '/tmp/'
+        with:
+          node-version: 16.x
+      - name: Install
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: Run tests
+        run: yarn coverage
+      - name: Comment coverage
+        if: always()
+        uses: Tintef/nyc-reporter-action@0.2.5
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_COVERAGE_FOLDER: 'true'
