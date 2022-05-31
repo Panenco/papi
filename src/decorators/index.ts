@@ -7,4 +7,4 @@ export * from './numeric.decorator';
 export * from './query.decorator';
 export * from './representer.decorator';
 export * from './transformBooleanString.decorator';
-export * from './transformLower.decorator';
+export * from './lower.decorator';

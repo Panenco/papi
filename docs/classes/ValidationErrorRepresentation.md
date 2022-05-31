@@ -28,4 +28,4 @@ Unrestricted Output DTO for Input Validation Errors
 
 #### Defined in
 
-[src/contracts/representations/validationError.representation.ts:11](https://github.com/Panenco/papi/blob/5302639/src/contracts/representations/validationError.representation.ts#L11)
+[contracts/representations/validationError.representation.ts:13](https://github.com/Panenco/papi/blob/dc0772e/src/contracts/representations/validationError.representation.ts#L13)

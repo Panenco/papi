@@ -1,5 +1,7 @@
 /**
  * Capitalized query order enum
+ *
+ * @category Contract
  */
 export enum QueryOrder {
   ASC = 'asc',

@@ -1,4 +1,12 @@
 {
+  "mochaExplorer.files": "build/tests/**/*.test.js",
+  "mochaExplorer.watch": "build/tests/**/*.test.js",
+  "mochaExplorer.require": ["source-map-support/register"],
+  "mochaExplorer.monkeyPatch": true,
+  "mochaExplorer.env": { "NODE_PATH": "./build" },
+  "mochaExplorer.ui": "bdd",
+  "mochaExplorer.timeout": 30000,
+  "testExplorer.mergeSuites": true,
   "search.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -14,20 +22,6 @@
   "files.exclude": {
     "**/node_modules": true
   },
-  "exportall.config.folderListener": [
-    "/src",
-    "/src/authorization",
-    "/src/controllers",
-    "/src/decorators",
-    "/src/errors",
-    "/src/middleware",
-    "/src/responses",
-    "/src/utils/representers",
-    "/src/representations",
-    "/src/contracts/errors",
-    "/src/contracts/queries",
-    "/src/contracts/enums",
-    "/src/contracts"
-  ],
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.tabSize": 2
 }

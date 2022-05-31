@@ -5,6 +5,8 @@ import { IsOptional } from 'class-validator';
  * Extended version of [[class-transformer]][[Expose]] decorator where a condition can be passed to optionally return the property this is applied on.
  *
  * @param condition Condition to Expose the property. With argument the complete current object.
+ *
+ * @category Decorator
  */
 export const ConditionalExpose = (condition: (object: any) => boolean) => {
   const expose = Expose();

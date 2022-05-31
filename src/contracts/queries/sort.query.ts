@@ -6,6 +6,8 @@ import { PagingQuery } from './paging.query';
 
 /**
  * Base query validator for a sortable paged list
+ *
+ * @category Contract
  */
 @Exclude()
 export class SortQuery extends PagingQuery {

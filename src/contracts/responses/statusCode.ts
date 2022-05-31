@@ -1,3 +1,8 @@
+/**
+ * Available status codes
+ *
+ * @category Contract
+ */
 export enum StatusCode {
   ok = 200,
   created = 201,

@@ -9,6 +9,8 @@ import { IAccessToken } from './accessToken.interface';
  * @param expiresIn Expiry Time
  * @param data Data to be serialized in the JWT
  * @returns An object containing the expiry time and the generated token
+ *
+ * @category Authorization
  */
 export const createAccessToken = async (secret: string, expiresIn: number, data: object): Promise<IAccessToken> => {
   return {
@@ -22,6 +24,8 @@ export const createAccessToken = async (secret: string, expiresIn: number, data:
  * @param token JWT token to decode and validate
  * @param secret The secret that should have been used to sign the token
  * @returns Decoded token data
+ *
+ * @category Authorization
  */
 export const getAccessTokenData = (token: string, secret: string): any => {
   try {

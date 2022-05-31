@@ -3,6 +3,8 @@ import { HttpError } from 'routing-controllers';
 
 /**
  * Base for API Error
+ *
+ * @category Error
  */
 export class ErrorBase extends HttpError {
   public code: number;

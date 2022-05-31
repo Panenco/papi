@@ -1,5 +1,8 @@
 node_modules/
 .DS_STORE
 build/
+tests/build-tests/
 config.json
 yarn-error.log
+
+.nyc_output/

@@ -10,6 +10,8 @@ import { Action } from 'routing-controllers';
  * Example3: [[valid1, invalid1]] => fail
  * @param jwtSecret JWT secret to be used to verify tokens
  * @returns Authentication checker that should be passed into useExpressServer => authorizationChecker
+ *
+ * @category Authorization
  */
 export const getAuthenticator = (jwtSecret: string) => {
   const authenticator = async (action: Action, requirements: (IRequirement | IRequirement[])[] | IRequirement) => {

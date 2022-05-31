@@ -7,6 +7,8 @@ import { IsDate } from 'class-validator';
  * Checks if a value is a date.
  *
  * Transforms string dates into JS Dates.
+ *
+ * @category Decorator
  */
 const PapiDate = () => {
   const isDate = IsDate();

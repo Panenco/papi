@@ -4,6 +4,8 @@ import { ErrorBase } from 'contracts';
 
 /**
  * Output DTO for HTTP Errors
+ *
+ * @category Contract
  */
 @Exclude()
 export class ErrorRepresentation {

@@ -4,8 +4,10 @@ import { ClassType } from 'utils';
 
 /**
  * Import all classes within a list of directories (js files)
- * @param directories directories to scan for classes
+ * @param directories directories glob to scan for classes
  * @returns Array of class types
+ *
+ * @category Helpers
  */
 export const importClasses = <TClassType = any>(directories: string[]): [ClassType<TClassType>] => {
   const allFiles = directories.reduce((allDirs, dir) => {

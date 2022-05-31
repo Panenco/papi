@@ -3,6 +3,8 @@ import { Expose, Transform } from 'class-transformer';
 /**
  * Decorator that produces a default value for non-existing or empty properties when transforming with [[class-transformer]]
  * @param value The default value to be set.
+ *
+ * @category Decorator
  */
 export const DefaultValue = (value: any) => {
   const expose = Expose();
