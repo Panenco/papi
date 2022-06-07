@@ -13,6 +13,6 @@ import { ClassType } from 'utils';
 export const arrayRepresenter =
   <T>(representationType: ClassType<T>) =>
   (_: Action, content: any[]) => {
-    const objects = content.map(item => item.toJSON?.() ?? item);
+    const objects = content.map(item => item?.toJSON?.() ?? item);
     return plainToInstance(representationType, objects, { exposeUnsetFields: false });
   };

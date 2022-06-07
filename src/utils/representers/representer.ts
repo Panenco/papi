@@ -12,7 +12,7 @@ import { ClassType } from 'utils';
 export const representer =
   <T>(representationType: ClassType<T>) =>
   (_: Action, content: any | [any[], number]) => {
-    return plainToInstance(representationType, (content as any).toJSON?.() ?? content, {
+    return plainToInstance(representationType, (content as any)?.toJSON?.() ?? content, {
       exposeUnsetFields: false,
     });
   };
