@@ -1,6 +1,6 @@
 import { ValidatorOptions } from 'class-validator';
-import { ParamOptions, QueryParams, UseBefore } from 'routing-controllers';
-import { Newable, validationMiddleware } from 'utils';
+import { QueryParams, UseBefore } from 'routing-controllers';
+import { InputOptions, Newable, validationMiddleware } from 'utils';
 
 /**
  *
@@ -13,7 +13,7 @@ import { Newable, validationMiddleware } from 'utils';
  *
  * @category Decorator
  */
-export const Query = (options: ParamOptions = {}, validatorOptions?: ValidatorOptions, type?: Newable) => {
+export const Query = (options: InputOptions = {}, validatorOptions?: ValidatorOptions, type?: Newable) => {
   return (target: Object, propertyKey: string | symbol, parameterIndex: number) => {
     const mdType = type ?? Reflect.getMetadata('design:paramtypes', target, propertyKey)?.[parameterIndex];
     UseBefore(validationMiddleware(mdType, 'query', validatorOptions))(target, propertyKey);

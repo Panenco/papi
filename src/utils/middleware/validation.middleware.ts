@@ -3,6 +3,8 @@ import { ValidatorOptions } from 'class-validator';
 import { NextFunction } from 'express';
 import { validator } from 'utils';
 
+import { TransformOptions } from '../types';
+
 /**
  * @internal
  * Middleware used by the [[`Body`]] and [[`Query`]] decorators but can also be directly used in an express middleware tree.
@@ -16,9 +18,11 @@ export const validationMiddleware = (
   type: any,
   value: string | 'body' | 'query' | 'params' = 'body',
   options: ValidatorOptions = {},
+  transformOptions: TransformOptions = {},
 ) => {
   return async (req: Request, _: Response, next: NextFunction) => {
-    const input = plainToInstance(type, req[value]);
+    transformOptions.exposeUnsetFields = transformOptions.exposeUnsetFields === true ? true : false;
+    const input = plainToInstance(type, req[value], transformOptions);
     await validator(input, { skipMissingProperties: false, whitelist: true, forbidNonWhitelisted: true, ...options });
 
     req[value] = input;
