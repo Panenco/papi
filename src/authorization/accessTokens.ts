@@ -6,7 +6,7 @@ import { IAccessToken } from './accessToken.interface';
 /**
  * Generate an HS256 JWT Bearer token signed by a provided secret
  * @param secret Secret used to sign the JWT
- * @param expiresIn Expiry Time
+ * @param expiresIn Expiry Time in seconds
  * @param data Data to be serialized in the JWT
  * @returns An object containing the expiry time and the generated token
  *
