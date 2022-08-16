@@ -35,4 +35,4 @@ ClassTransformOptions.exposeUnsetFields
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:30](https://github.com/Panenco/papi/blob/1321f55/src/utils/types/transformerOptions.ts#L30)
+[utils/types/transformerOptions.ts:30](https://github.com/Panenco/papi/blob/6dd999a/src/utils/types/transformerOptions.ts#L30)

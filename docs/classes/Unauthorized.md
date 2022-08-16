@@ -35,7 +35,7 @@ Http error with status code 401
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/1321f55/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/1321f55/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L11)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/1321f55/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L12)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/1321f55/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L13)
 
 ## Constructors
 
@@ -99,4 +99,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/unauthorized.error.ts:9](https://github.com/Panenco/papi/blob/1321f55/src/contracts/errors/unauthorized.error.ts#L9)
+[contracts/errors/unauthorized.error.ts:9](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/unauthorized.error.ts#L9)

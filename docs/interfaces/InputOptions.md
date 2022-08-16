@@ -23,7 +23,7 @@ Class-transformer options used to perform plainToClass operation.
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:12](https://github.com/Panenco/papi/blob/1321f55/src/utils/types/transformerOptions.ts#L12)
+[utils/types/transformerOptions.ts:12](https://github.com/Panenco/papi/blob/6dd999a/src/utils/types/transformerOptions.ts#L12)
 
 ___
 
@@ -35,4 +35,4 @@ Extra options to be passed to body-parser middleware.
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:16](https://github.com/Panenco/papi/blob/1321f55/src/utils/types/transformerOptions.ts#L16)
+[utils/types/transformerOptions.ts:16](https://github.com/Panenco/papi/blob/6dd999a/src/utils/types/transformerOptions.ts#L16)

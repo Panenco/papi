@@ -35,7 +35,7 @@ Base query validator for a paged list
 
 #### Defined in
 
-[contracts/queries/paging.query.ts:16](https://github.com/Panenco/papi/blob/1321f55/src/contracts/queries/paging.query.ts#L16)
+[contracts/queries/paging.query.ts:16](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/queries/paging.query.ts#L16)
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 #### Defined in
 
-[contracts/queries/paging.query.ts:22](https://github.com/Panenco/papi/blob/1321f55/src/contracts/queries/paging.query.ts#L22)
+[contracts/queries/paging.query.ts:22](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/queries/paging.query.ts#L22)
