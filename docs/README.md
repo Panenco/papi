@@ -35,12 +35,12 @@ A general way of authorizing requests by first validating the token and then che
 
 ### Setup Authorization
 
-1. Create an authenticator instance and pass it to routing-controllers `authorizationChecker` with [getAuthenticator](docs/modules.md#getauthenticator)
+1. Create an authenticator instance and pass it to routing-controllers `authorizationChecker` with [getAuthenticator](modules.md#getauthenticator)
    - This will connect the `@Authorize` decorator
 2. Apply @Authorize decorator to a route or controller
-3. Create a [Requirement](docs/modules.md#irequirement)
+3. Create a [Requirement](modules.md#irequirement)
 4. Pass one or a set of requirements to the `@Authorize` decorator
-   - To see how the requirements are applied, see the [authenticator documentation](docs/modules.md#getauthenticator)
+   - To see how the requirements are applied, see the [authenticator documentation](modules.md#getauthenticator)
 
 ### Access tokens
 
@@ -48,7 +48,7 @@ Applications should use short lived [JWT](https://jwt.io/) tokens to authenticat
 
 papi uses a simple yet secure token mechanism. A secret is used to sign the token and the same secret is used to verify the validity of the token. Each application and environment should have it's own secret.
 
-Creating a token is as simple as calling [createAccessToken](modules.md#createaccesstoken) with the required data and the secret that's used when [getting the authenticator](docs/modules.md#getauthenticator).
+Creating a token is as simple as calling [createAccessToken](modules.md#createaccesstoken) with the required data and the secret that's used when [getting the authenticator](modules.md#getauthenticator).
 
 When the `@Authorize` decorator fires the token will be automatically verified and the data will be available on `request.token`
 
@@ -58,8 +58,8 @@ Contracts are the way to validate input and output. All views and bodies should 
 
 papi comes with a set of base contracts for error handling and pagination.
 
-- [Error classes](docs/modules.md#error-classes)
-- [Contract classes](docs/modules.md#contract-classes) (Paging / Representation)
+- [Error classes](modules.md#error-classes)
+- [Contract classes](modules.md#contract-classes) (Paging / Representation)
 
 ## Middleware
 
