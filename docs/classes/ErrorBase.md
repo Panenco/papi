@@ -41,7 +41,7 @@ Base for API Error
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/89bd2da/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/89bd2da/src/contracts/errors/errorBase.error.ts#L11)
 
 ___
 
@@ -65,7 +65,7 @@ HttpError.message
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/89bd2da/src/contracts/errors/errorBase.error.ts#L12)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/89bd2da/src/contracts/errors/errorBase.error.ts#L13)
 
 ## Constructors
 
@@ -98,4 +98,4 @@ HttpError.constructor
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:15](https://github.com/Panenco/papi/blob/6dd999a/src/contracts/errors/errorBase.error.ts#L15)
+[contracts/errors/errorBase.error.ts:15](https://github.com/Panenco/papi/blob/89bd2da/src/contracts/errors/errorBase.error.ts#L15)
