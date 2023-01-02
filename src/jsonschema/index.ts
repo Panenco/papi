@@ -99,11 +99,11 @@ export function targetConstructorToSchema(targetConstructor: Function, userOptio
  */
 function getMetadatasFromStorage(storage: IStorage): Map<any, ValidationMetadata[]> {
   const metadatas: Map<any, ValidationMetadata[]> = storage.validationMetadatas;
-
+  const map: Map<any, ValidationMetadata[]> = new Map();
   metadatas.forEach((value, target) => {
-    metadatas.set(target, populateMetadatasWithConstraints(storage, value));
+    map.set(target, populateMetadatasWithConstraints(storage, value));
   });
-  return metadatas;
+  return map;
 }
 
 function populateMetadatasWithConstraints(storage: IStorage, metadatas: ValidationMetadata[]): ValidationMetadata[] {
