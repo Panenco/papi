@@ -6,3 +6,4 @@ config.json
 yarn-error.log
 
 .nyc_output/
+papi.code-workspace

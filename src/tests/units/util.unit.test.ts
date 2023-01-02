@@ -11,6 +11,7 @@ describe('Unit tests', () => {
 
     it('Should import classes', async () => {
       const classes = importClasses([path.join(__dirname, '..', '..', '**', '*.js')]);
+
       expect(classes.length).gt(0);
       const errors = importClasses([path.join(__dirname, '..', '..', '**', '*.error.js')]);
       const instances = errors
