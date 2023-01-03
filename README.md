@@ -65,6 +65,9 @@ A set of default middleware is provided.
 
 The full list of available middleware can be found in the [technical documentation](/docs/modules.md#middleware-functions).
 
+## JSONSchema
+
+Helper functions that generate a swagger schema based on views annotated with `class-validator` and `class-transformer`. Except for some small fixes, this code is copied from [epiphone/class-validator-jsonschema](https://github.com/epiphone/class-validator-jsonschema).
 <br>
 <br>
 

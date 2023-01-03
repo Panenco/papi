@@ -1,6 +1,6 @@
 {
   "name": "@panenco/papi",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Panenco papi",
   "author": "Panenco <info@panenco.com>",
   "repository": "git@github.com:Panenco/papi.git",
@@ -22,14 +22,17 @@
   },
   "peerDependencies": {
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.13.2",
+    "class-validator": "^0.14.0",
     "express": "^4.18.1"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.9.0",
-    "routing-controllers-openapi": "^3.1.0"
+    "routing-controllers-openapi": "^3.1.0",
+    "lodash.groupby": "^4.6.0",
+    "lodash.merge": "^4.6.2",
+    "openapi3-ts": "^2.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
@@ -41,10 +44,14 @@
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
+    "@types/validator": "^13.7.2",
+    "@types/lodash.get": "^4.4.6",
+    "@types/lodash.groupby": "^4.6.6",
+    "@types/lodash.merge": "^4.6.6",
     "chai": "^4.3.6",
     "chokidar": "^3.5.3",
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.13.2",
+    "class-validator": "^0.14.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -59,6 +66,7 @@
     "tsc-alias": "^1.6.7",
     "typedoc": "^0.22.16",
     "typedoc-plugin-markdown": "^3.12.1",
-    "typescript": "^4.7.2"
+    "typescript": "^4.7.2",
+    "lodash.get": "^4.4.2"
   }
 }
