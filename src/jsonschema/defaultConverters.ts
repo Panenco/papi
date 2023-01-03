@@ -1,39 +1,34 @@
+import 'reflect-metadata';
+
+import * as cv from 'class-validator';
+import { ValidationMetadata } from 'class-validator/types/metadata/ValidationMetadata';
+import { SchemaObject } from 'openapi3-ts';
+
+import { IOptions } from './options';
+
+// Code copied from https://github.com/epiphone/class-validator-jsonschema
+
 // tslint:disable:no-submodule-imports
-import * as cv from 'class-validator'
-import { ValidationMetadata } from 'class-validator/types/metadata/ValidationMetadata'
-import { SchemaObject } from 'openapi3-ts'
-import 'reflect-metadata'
-
-import { IOptions } from './options'
-
 export interface ISchemaConverters {
-  [validatorType: string]: SchemaConverter | SchemaObject
+  [validatorType: string]: SchemaConverter | SchemaObject;
 }
 
-export type SchemaConverter = (
-  meta: ValidationMetadata,
-  options: IOptions
-) => SchemaObject | void
+export type SchemaConverter = (meta: ValidationMetadata, options: IOptions) => SchemaObject | void;
 
 export const defaultConverters: ISchemaConverters = {
   [cv.ValidationTypes.CUSTOM_VALIDATION]: (meta, options) => {
     if (typeof meta.target === 'function') {
-      const type = getPropType(meta.target.prototype, meta.propertyName)
-      return targetToSchema(type, options)
+      const type = getPropType(meta.target.prototype, meta.propertyName);
+      return targetToSchema(type, options);
     }
   },
   [cv.ValidationTypes.NESTED_VALIDATION]: (meta, options) => {
     if (typeof meta.target === 'function') {
       const typeMeta = options.classTransformerMetadataStorage
-        ? options.classTransformerMetadataStorage.findTypeMetadata(
-            meta.target,
-            meta.propertyName
-          )
-        : null
-      const childType = typeMeta
-        ? typeMeta.typeFunction()
-        : getPropType(meta.target.prototype, meta.propertyName)
-      return targetToSchema(childType, options)
+        ? options.classTransformerMetadataStorage.findTypeMetadata(meta.target, meta.propertyName)
+        : null;
+      const childType = typeMeta ? typeMeta.typeFunction() : getPropType(meta.target.prototype, meta.propertyName);
+      return targetToSchema(childType, options);
     }
   },
   [cv.ValidationTypes.WHITELIST]: {},
@@ -41,16 +36,16 @@ export const defaultConverters: ISchemaConverters = {
   [cv.ValidationTypes.IS_DEFINED]: {
     not: { type: 'null' },
   },
-  [cv.EQUALS]: (meta) => {
-    const schema = constraintToSchema(meta.constraints[0])
+  [cv.EQUALS]: meta => {
+    const schema = constraintToSchema(meta.constraints[0]);
     if (schema) {
-      return { ...schema, enum: [meta.constraints[0]] }
+      return { ...schema, enum: [meta.constraints[0]] };
     }
   },
-  [cv.NOT_EQUALS]: (meta) => {
-    const schema = constraintToSchema(meta.constraints[0])
+  [cv.NOT_EQUALS]: meta => {
+    const schema = constraintToSchema(meta.constraints[0]);
     if (schema) {
-      return { not: { ...schema, enum: [meta.constraints[0]] } }
+      return { not: { ...schema, enum: [meta.constraints[0]] } };
     }
   },
   [cv.IS_EMPTY]: {
@@ -75,20 +70,16 @@ export const defaultConverters: ISchemaConverters = {
     minLength: 1,
     type: 'string',
   },
-  [cv.IS_IN]: (meta) => {
-    const [head, ...rest]: SchemaObject[] = meta.constraints[0].map(
-      constraintToSchema
-    )
-    if (head && rest.every((item) => item.type === head.type)) {
-      return { ...head, enum: meta.constraints[0] }
+  [cv.IS_IN]: meta => {
+    const [head, ...rest]: SchemaObject[] = meta.constraints[0].map(constraintToSchema);
+    if (head && rest.every(item => item.type === head.type)) {
+      return { ...head, enum: meta.constraints[0] };
     }
   },
-  [cv.IS_NOT_IN]: (meta) => {
-    const [head, ...rest]: SchemaObject[] = meta.constraints[0].map(
-      constraintToSchema
-    )
-    if (head && rest.every((item) => item.type === head.type)) {
-      return { not: { ...head, enum: meta.constraints[0] } }
+  [cv.IS_NOT_IN]: meta => {
+    const [head, ...rest]: SchemaObject[] = meta.constraints[0].map(constraintToSchema);
+    if (head && rest.every(item => item.type === head.type)) {
+      return { not: { ...head, enum: meta.constraints[0] } };
     }
   },
   [cv.IS_BOOLEAN]: {
@@ -117,13 +108,13 @@ export const defaultConverters: ISchemaConverters = {
   [cv.IS_INT]: {
     type: 'integer',
   },
-  [cv.IS_ENUM]: (meta) => {
+  [cv.IS_ENUM]: meta => {
     return {
       enum: Object.values(meta.constraints[0]),
       type: 'string',
-    }
+    };
   },
-  [cv.IS_DIVISIBLE_BY]: (meta) => ({
+  [cv.IS_DIVISIBLE_BY]: meta => ({
     multipleOf: meta.constraints[0],
     type: 'number',
   }),
@@ -137,22 +128,22 @@ export const defaultConverters: ISchemaConverters = {
     maximum: 0,
     type: 'number',
   },
-  [cv.MIN]: (meta) => ({
+  [cv.MIN]: meta => ({
     minimum: meta.constraints[0],
     type: 'number',
   }),
-  [cv.MAX]: (meta) => ({
+  [cv.MAX]: meta => ({
     maximum: meta.constraints[0],
     type: 'number',
   }),
-  [cv.MIN_DATE]: (meta) => ({
+  [cv.MIN_DATE]: meta => ({
     description: `After ${meta.constraints[0].toJSON()}`,
     oneOf: [
       { format: 'date', type: 'string' },
       { format: 'date-time', type: 'string' },
     ],
   }),
-  [cv.MAX_DATE]: (meta) => ({
+  [cv.MAX_DATE]: meta => ({
     description: `Before ${meta.constraints[0].toJSON()}`,
     oneOf: [
       { format: 'date', type: 'string' },
@@ -167,11 +158,11 @@ export const defaultConverters: ISchemaConverters = {
     pattern: '^[-+]?[0-9]+$',
     type: 'string',
   },
-  [cv.CONTAINS]: (meta) => ({
+  [cv.CONTAINS]: meta => ({
     pattern: meta.constraints[0],
     type: 'string',
   }),
-  [cv.NOT_CONTAINS]: (meta) => ({
+  [cv.NOT_CONTAINS]: meta => ({
     not: { pattern: meta.constraints[0] },
     type: 'string',
   }),
@@ -211,13 +202,11 @@ export const defaultConverters: ISchemaConverters = {
     type: 'string',
   },
   [cv.IS_FULL_WIDTH]: {
-    pattern:
-      '[^\\u0020-\\u007E\\uFF61-\\uFF9F\\uFFA0-\\uFFDC\\uFFE8-\\uFFEE0-9a-zA-Z]',
+    pattern: '[^\\u0020-\\u007E\\uFF61-\\uFF9F\\uFFA0-\\uFFDC\\uFFE8-\\uFFEE0-9a-zA-Z]',
     type: 'string',
   },
   [cv.IS_HALF_WIDTH]: {
-    pattern:
-      '[\\u0020-\\u007E\\uFF61-\\uFF9F\\uFFA0-\\uFFDC\\uFFE8-\\uFFEE0-9a-zA-Z]',
+    pattern: '[\\u0020-\\u007E\\uFF61-\\uFF9F\\uFFA0-\\uFFDC\\uFFE8-\\uFFEE0-9a-zA-Z]',
     type: 'string',
   },
   [cv.IS_VARIABLE_WIDTH]: {
@@ -231,7 +220,7 @@ export const defaultConverters: ISchemaConverters = {
     pattern: '^[0-9a-fA-F]+$',
     type: 'string',
   },
-  [cv.IS_IP]: (meta) => ({
+  [cv.IS_IP]: meta => ({
     format: 'ipv' + (meta.constraints[0] === '6' ? 6 : 4),
     type: 'string',
   }),
@@ -280,12 +269,12 @@ export const defaultConverters: ISchemaConverters = {
     format: 'uuid',
     type: 'string',
   },
-  [cv.IS_LENGTH]: (meta) => {
-    const [minLength, maxLength] = meta.constraints
+  [cv.IS_LENGTH]: meta => {
+    const [minLength, maxLength] = meta.constraints;
     if (maxLength || maxLength === 0) {
-      return { minLength, maxLength, type: 'string' }
+      return { minLength, maxLength, type: 'string' };
     }
-    return { minLength, type: 'string' }
+    return { minLength, type: 'string' };
   },
   [cv.IS_UPPERCASE]: {
     type: 'string',
@@ -297,15 +286,15 @@ export const defaultConverters: ISchemaConverters = {
     type: 'object',
     minProperties: 1,
   },
-  [cv.MIN_LENGTH]: (meta) => ({
+  [cv.MIN_LENGTH]: meta => ({
     minLength: meta.constraints[0],
     type: 'string',
   }),
-  [cv.MAX_LENGTH]: (meta) => ({
+  [cv.MAX_LENGTH]: meta => ({
     maxLength: meta.constraints[0],
     type: 'string',
   }),
-  [cv.MATCHES]: (meta) => ({
+  [cv.MATCHES]: meta => ({
     pattern: meta.constraints[0].source,
     type: 'string',
   }),
@@ -313,9 +302,9 @@ export const defaultConverters: ISchemaConverters = {
     pattern: '^([01]\\d|2[0-3]):?([0-5]\\d)$',
     type: 'string',
   },
-  [cv.ARRAY_CONTAINS]: (meta) => {
-    const schemas: SchemaObject[] = meta.constraints[0].map(constraintToSchema)
-    if (schemas.length > 0 && schemas.every((s) => s && s.type)) {
+  [cv.ARRAY_CONTAINS]: meta => {
+    const schemas: SchemaObject[] = meta.constraints[0].map(constraintToSchema);
+    if (schemas.length > 0 && schemas.every(s => s && s.type)) {
       return {
         not: {
           anyOf: schemas.map((d, i) => ({
@@ -328,13 +317,13 @@ export const defaultConverters: ISchemaConverters = {
           })),
         },
         type: 'array',
-      }
+      };
     }
-    return { items: {}, type: 'array' }
+    return { items: {}, type: 'array' };
   },
-  [cv.ARRAY_NOT_CONTAINS]: (meta) => {
-    const schemas: SchemaObject[] = meta.constraints[0].map(constraintToSchema)
-    if (schemas.length > 0 && schemas.every((s) => s && s.type)) {
+  [cv.ARRAY_NOT_CONTAINS]: meta => {
+    const schemas: SchemaObject[] = meta.constraints[0].map(constraintToSchema);
+    if (schemas.length > 0 && schemas.every(s => s && s.type)) {
       return {
         items: {
           not: {
@@ -345,21 +334,21 @@ export const defaultConverters: ISchemaConverters = {
           },
         },
         type: 'array',
-      }
+      };
     }
-    return { items: {}, type: 'array' }
+    return { items: {}, type: 'array' };
   },
   [cv.ARRAY_NOT_EMPTY]: {
     items: {},
     minItems: 1,
     type: 'array',
   },
-  [cv.ARRAY_MIN_SIZE]: (meta) => ({
+  [cv.ARRAY_MIN_SIZE]: meta => ({
     items: {},
     minItems: meta.constraints[0],
     type: 'array',
   }),
-  [cv.ARRAY_MAX_SIZE]: (meta) => ({
+  [cv.ARRAY_MAX_SIZE]: meta => ({
     items: {},
     maxItems: meta.constraints[0],
     type: 'array',
@@ -369,33 +358,30 @@ export const defaultConverters: ISchemaConverters = {
     type: 'array',
     uniqueItems: true,
   },
-}
+};
 
 function getPropType(target: object, property: string) {
-  return Reflect.getMetadata('design:type', target, property)
+  return Reflect.getMetadata('design:type', target, property);
 }
 
 function constraintToSchema(primitive: any): SchemaObject | void {
-  const primitives = ['string', 'number', 'boolean']
-  const type = typeof primitive
+  const primitives = ['string', 'number', 'boolean'];
+  const type = typeof primitive;
   if (primitives.includes(type)) {
-    return { type: type as 'string' | 'number' | 'boolean' }
+    return { type: type as 'string' | 'number' | 'boolean' };
   }
 }
 
 function targetToSchema(type: any, options: IOptions): SchemaObject | void {
   if (typeof type === 'function') {
-    if (
-      type.prototype === String.prototype ||
-      type.prototype === Symbol.prototype
-    ) {
-      return { type: 'string' }
+    if (type.prototype === String.prototype || type.prototype === Symbol.prototype) {
+      return { type: 'string' };
     } else if (type.prototype === Number.prototype) {
-      return { type: 'number' }
+      return { type: 'number' };
     } else if (type.prototype === Boolean.prototype) {
-      return { type: 'boolean' }
+      return { type: 'boolean' };
     }
 
-    return { $ref: options.refPointerPrefix + type.name }
+    return { $ref: options.refPointerPrefix + type.name };
   }
 }

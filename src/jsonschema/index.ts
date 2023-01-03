@@ -10,6 +10,8 @@ import { getMetadataSchema } from '../decorators/JSONSchema.decorator.js';
 import { defaultConverters } from './defaultConverters';
 import { defaultOptions, IOptions } from './options';
 
+// Code copied from https://github.com/epiphone/class-validator-jsonschema
+
 type IStorage = {
   validationMetadatas: Map<any, ValidationMetadata[]>;
   constraintMetadatas: Map<any, ConstraintMetadata[]>;
