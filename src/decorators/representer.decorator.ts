@@ -47,6 +47,12 @@ export const Representer = (
  * @param statusCode Optional Status code of the success response
  * @param options OpenAPI options for API documentation
  *
+ * Structure of the response:
+ * {
+ *     items: object[],
+ *     count: number
+ * }
+ *
  * @category Decorator
  */
 export const ListRepresenter = (
@@ -77,6 +83,8 @@ export const ListRepresenter = (
  * @param representation class type of the representation to be used by [[class-transformer]]
  * @param statusCode Optional Status code of the success response
  * @param options OpenAPI options for API documentation
+ *
+ * Structure of the response: object[]
  *
  * @category Decorator
  */
