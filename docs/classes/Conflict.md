@@ -43,7 +43,7 @@ Http error with status code 409 (duplicates)
 
 #### Defined in
 
-[contracts/errors/conflict.error.ts:9](https://github.com/Panenco/papi/blob/2f616a8/src/contracts/errors/conflict.error.ts#L9)
+[contracts/errors/conflict.error.ts:9](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/conflict.error.ts#L9)
 
 ## Properties
 
@@ -57,7 +57,7 @@ Http error with status code 409 (duplicates)
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/2f616a8/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/2f616a8/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L11)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/2f616a8/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L12)
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/2f616a8/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L13)
