@@ -19,11 +19,13 @@ Body/Query decorator parameters.
 
 Class-transformer options used to perform plainToClass operation.
 
-**`see`** https://github.com/pleerock/class-transformer
+**`See`**
+
+https://github.com/pleerock/class-transformer
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/utils/types/transformerOptions.ts#L12)
+[utils/types/transformerOptions.ts:12](https://github.com/Panenco/papi/blob/db78196/src/utils/types/transformerOptions.ts#L12)
 
 ___
 
@@ -35,4 +37,4 @@ Extra options to be passed to body-parser middleware.
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:16](https://github.com/Panenco/papi/blob/894fdec/src/utils/types/transformerOptions.ts#L16)
+[utils/types/transformerOptions.ts:16](https://github.com/Panenco/papi/blob/db78196/src/utils/types/transformerOptions.ts#L16)

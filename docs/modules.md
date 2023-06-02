@@ -4,6 +4,29 @@
 
 ## Table of contents
 
+### Contract Enumerations
+
+- [QueryOrder](enums/QueryOrder.md)
+- [StatusCode](enums/StatusCode.md)
+
+### Contract Classes
+
+- [PagingQuery](classes/PagingQuery.md)
+- [SortQuery](classes/SortQuery.md)
+- [ErrorRepresentation](classes/ErrorRepresentation.md)
+- [ListRepresentation](classes/ListRepresentation.md)
+- [ValidationErrorRepresentation](classes/ValidationErrorRepresentation.md)
+
+### Error Classes
+
+- [BadRequest](classes/BadRequest.md)
+- [Conflict](classes/Conflict.md)
+- [ErrorBase](classes/ErrorBase.md)
+- [Forbidden](classes/Forbidden.md)
+- [NotFound](classes/NotFound.md)
+- [Unauthorized](classes/Unauthorized.md)
+- [ValidationError](classes/ValidationError.md)
+
 ### Authorization Interfaces
 
 - [IAccessToken](interfaces/IAccessToken.md)
@@ -12,6 +35,10 @@
 
 - [InputOptions](interfaces/InputOptions.md)
 - [TransformOptions](interfaces/TransformOptions.md)
+
+### Authorization Type Aliases
+
+- [IRequirement](modules.md#irequirement)
 
 ### Authorization Functions
 
@@ -48,44 +75,33 @@
 
 - [errorMiddleware](modules.md#errormiddleware)
 
-### Other Functions
+## Authorization Type Aliases
 
-- [JSONSchema](modules.md#jsonschema)
-- [getMetadataSchema](modules.md#getmetadataschema)
-- [validationMetadatasToSchemas](modules.md#validationmetadatastoschemas)
-- [validationMetadataArrayToSchemas](modules.md#validationmetadataarraytoschemas)
-- [targetConstructorToSchema](modules.md#targetconstructortoschema)
+### IRequirement
 
-### Authorization Type Aliases
+Ƭ **IRequirement**: (`request`: `Request`) => `Promise`<`void`\> \| `void`
 
-- [IRequirement](modules.md#irequirement)
+#### Type declaration
 
-### Other Type Aliases
+▸ (`request`): `Promise`<`void`\> \| `void`
 
-- [DecoratorSchema](modules.md#decoratorschema)
+Authorization definition base type
 
-### Contract Enumerations
+Implementation should validate required check and throw [[Unauthorized]] or [[Forbidden]] Exception
 
-- [QueryOrder](enums/QueryOrder.md)
-- [StatusCode](enums/StatusCode.md)
+##### Parameters
 
-### Contract Classes
+| Name | Type |
+| :------ | :------ |
+| `request` | `Request` |
 
-- [PagingQuery](classes/PagingQuery.md)
-- [SortQuery](classes/SortQuery.md)
-- [ErrorRepresentation](classes/ErrorRepresentation.md)
-- [ListRepresentation](classes/ListRepresentation.md)
-- [ValidationErrorRepresentation](classes/ValidationErrorRepresentation.md)
+##### Returns
 
-### Error Classes
+`Promise`<`void`\> \| `void`
 
-- [BadRequest](classes/BadRequest.md)
-- [Conflict](classes/Conflict.md)
-- [ErrorBase](classes/ErrorBase.md)
-- [Forbidden](classes/Forbidden.md)
-- [NotFound](classes/NotFound.md)
-- [Unauthorized](classes/Unauthorized.md)
-- [ValidationError](classes/ValidationError.md)
+#### Defined in
+
+[authorization/requirement.interface.ts:10](https://github.com/Panenco/papi/blob/db78196/src/authorization/requirement.interface.ts#L10)
 
 ## Authorization Functions
 
@@ -111,7 +127,7 @@ An object containing the expiry time and the generated token
 
 #### Defined in
 
-[authorization/accessTokens.ts:15](https://github.com/Panenco/papi/blob/894fdec/src/authorization/accessTokens.ts#L15)
+[authorization/accessTokens.ts:15](https://github.com/Panenco/papi/blob/db78196/src/authorization/accessTokens.ts#L15)
 
 ___
 
@@ -136,7 +152,7 @@ Decoded token data
 
 #### Defined in
 
-[authorization/accessTokens.ts:30](https://github.com/Panenco/papi/blob/894fdec/src/authorization/accessTokens.ts#L30)
+[authorization/accessTokens.ts:30](https://github.com/Panenco/papi/blob/db78196/src/authorization/accessTokens.ts#L30)
 
 ___
 
@@ -177,7 +193,7 @@ Authentication checker that should be passed into useExpressServer => authorizat
 
 #### Defined in
 
-[authorization/authenticator.ts:16](https://github.com/Panenco/papi/blob/894fdec/src/authorization/authenticator.ts#L16)
+[authorization/authenticator.ts:16](https://github.com/Panenco/papi/blob/db78196/src/authorization/authenticator.ts#L16)
 
 ___
 
@@ -210,7 +226,7 @@ The class type of a list representation with the necessary metadata for the item
 
 #### Defined in
 
-[contracts/representations/list.representation.ts:28](https://github.com/Panenco/papi/blob/894fdec/src/contracts/representations/list.representation.ts#L28)
+[contracts/representations/list.representation.ts:28](https://github.com/Panenco/papi/blob/db78196/src/contracts/representations/list.representation.ts#L28)
 
 ___
 
@@ -252,7 +268,7 @@ Must be applied on a controller action parameter.
 
 #### Defined in
 
-[decorators/body.decorator.ts:22](https://github.com/Panenco/papi/blob/894fdec/src/decorators/body.decorator.ts#L22)
+[decorators/body.decorator.ts:22](https://github.com/Panenco/papi/blob/db78196/src/decorators/body.decorator.ts#L22)
 
 ___
 
@@ -287,7 +303,7 @@ Extended version of [[class-transformer]][[Expose]] decorator where a condition 
 
 #### Defined in
 
-[decorators/conditionalExpose.decorator.ts:11](https://github.com/Panenco/papi/blob/894fdec/src/decorators/conditionalExpose.decorator.ts#L11)
+[decorators/conditionalExpose.decorator.ts:11](https://github.com/Panenco/papi/blob/db78196/src/decorators/conditionalExpose.decorator.ts#L11)
 
 ___
 
@@ -320,7 +336,7 @@ Transforms string dates into JS Dates.
 
 #### Defined in
 
-[decorators/date.decorator.ts:13](https://github.com/Panenco/papi/blob/894fdec/src/decorators/date.decorator.ts#L13)
+[decorators/date.decorator.ts:13](https://github.com/Panenco/papi/blob/db78196/src/decorators/date.decorator.ts#L13)
 
 ___
 
@@ -355,7 +371,7 @@ Decorator that produces a default value for non-existing or empty properties whe
 
 #### Defined in
 
-[decorators/defaultValue.decorator.ts:9](https://github.com/Panenco/papi/blob/894fdec/src/decorators/defaultValue.decorator.ts#L9)
+[decorators/defaultValue.decorator.ts:9](https://github.com/Panenco/papi/blob/db78196/src/decorators/defaultValue.decorator.ts#L9)
 
 ___
 
@@ -371,7 +387,7 @@ Transforms strings to lowercase.
 
 #### Defined in
 
-[decorators/lower.decorator.ts:8](https://github.com/Panenco/papi/blob/894fdec/src/decorators/lower.decorator.ts#L8)
+[decorators/lower.decorator.ts:8](https://github.com/Panenco/papi/blob/db78196/src/decorators/lower.decorator.ts#L8)
 
 ___
 
@@ -415,7 +431,7 @@ Transforms the nested objects to the defined type
 
 #### Defined in
 
-[decorators/nested.decorator.ts:16](https://github.com/Panenco/papi/blob/894fdec/src/decorators/nested.decorator.ts#L16)
+[decorators/nested.decorator.ts:16](https://github.com/Panenco/papi/blob/db78196/src/decorators/nested.decorator.ts#L16)
 
 ___
 
@@ -446,7 +462,7 @@ Transforms strings and other matching types to numbers
 
 #### Defined in
 
-[decorators/numeric.decorator.ts:11](https://github.com/Panenco/papi/blob/894fdec/src/decorators/numeric.decorator.ts#L11)
+[decorators/numeric.decorator.ts:11](https://github.com/Panenco/papi/blob/db78196/src/decorators/numeric.decorator.ts#L11)
 
 ___
 
@@ -486,7 +502,7 @@ Must be applied on a controller action parameter.
 
 #### Defined in
 
-[decorators/query.decorator.ts:16](https://github.com/Panenco/papi/blob/894fdec/src/decorators/query.decorator.ts#L16)
+[decorators/query.decorator.ts:16](https://github.com/Panenco/papi/blob/db78196/src/decorators/query.decorator.ts#L16)
 
 ___
 
@@ -531,7 +547,7 @@ Must be applied on a controller method.
 
 #### Defined in
 
-[decorators/representer.decorator.ts:20](https://github.com/Panenco/papi/blob/894fdec/src/decorators/representer.decorator.ts#L20)
+[decorators/representer.decorator.ts:20](https://github.com/Panenco/papi/blob/db78196/src/decorators/representer.decorator.ts#L20)
 
 ___
 
@@ -553,7 +569,7 @@ Must be applied on a controller method.
 | :------ | :------ | :------ | :------ |
 | `representation` | `ClassType`<`any`\> | `undefined` | class type of the representation to be used by [[class-transformer]] |
 | `statusCode` | `number` | `200` | Optional Status code of the success response |
-| `options` | `Object` | `{}` | OpenAPI options for API documentation  Structure of the response: {     items: object[],     count: number } |
+| `options` | `Object` | `{}` | OpenAPI options for API documentation Structure of the response: { items: object[], count: number } |
 | `options.contentType?` | `string` | `undefined` | - |
 | `options.description?` | `string` | `undefined` | - |
 
@@ -576,7 +592,7 @@ Must be applied on a controller method.
 
 #### Defined in
 
-[decorators/representer.decorator.ts:58](https://github.com/Panenco/papi/blob/894fdec/src/decorators/representer.decorator.ts#L58)
+[decorators/representer.decorator.ts:58](https://github.com/Panenco/papi/blob/db78196/src/decorators/representer.decorator.ts#L58)
 
 ___
 
@@ -598,7 +614,7 @@ Must be applied on a controller method.
 | :------ | :------ | :------ | :------ |
 | `representation` | `ClassType`<`any`\> | `undefined` | class type of the representation to be used by [[class-transformer]] |
 | `statusCode` | `number` | `200` | Optional Status code of the success response |
-| `options` | `Object` | `{}` | OpenAPI options for API documentation  Structure of the response: object[] |
+| `options` | `Object` | `{}` | OpenAPI options for API documentation Structure of the response: object[] |
 | `options.contentType?` | `string` | `undefined` | - |
 | `options.description?` | `string` | `undefined` | - |
 
@@ -621,7 +637,7 @@ Must be applied on a controller method.
 
 #### Defined in
 
-[decorators/representer.decorator.ts:91](https://github.com/Panenco/papi/blob/894fdec/src/decorators/representer.decorator.ts#L91)
+[decorators/representer.decorator.ts:91](https://github.com/Panenco/papi/blob/db78196/src/decorators/representer.decorator.ts#L91)
 
 ___
 
@@ -639,7 +655,7 @@ Transforms string boolean into JS boolean.
 
 #### Defined in
 
-[decorators/transformBooleanString.decorator.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/decorators/transformBooleanString.decorator.ts#L10)
+[decorators/transformBooleanString.decorator.ts:10](https://github.com/Panenco/papi/blob/db78196/src/decorators/transformBooleanString.decorator.ts#L10)
 
 ___
 
@@ -671,7 +687,7 @@ Array of class types
 
 #### Defined in
 
-[utils/helpers/importClasses.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/utils/helpers/importClasses.ts#L12)
+[utils/helpers/importClasses.ts:12](https://github.com/Panenco/papi/blob/db78196/src/utils/helpers/importClasses.ts#L12)
 
 ___
 
@@ -697,7 +713,7 @@ The object that has been created from the path. Ex. ```{ root: { child: { subChi
 
 #### Defined in
 
-[utils/helpers/stringToObject.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/utils/helpers/stringToObject.ts#L10)
+[utils/helpers/stringToObject.ts:10](https://github.com/Panenco/papi/blob/db78196/src/utils/helpers/stringToObject.ts#L10)
 
 ___
 
@@ -720,7 +736,7 @@ Validates an object with class-validator [[`validate`]]
 
 #### Defined in
 
-[utils/helpers/validator.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/utils/helpers/validator.ts#L12)
+[utils/helpers/validator.ts:12](https://github.com/Panenco/papi/blob/db78196/src/utils/helpers/validator.ts#L12)
 
 ___
 
@@ -749,176 +765,4 @@ Errors extended from [[`ErrorBase`]] will be handled and serialized to the respo
 
 #### Defined in
 
-[utils/middleware/error.middleware.ts:15](https://github.com/Panenco/papi/blob/894fdec/src/utils/middleware/error.middleware.ts#L15)
-
-___
-
-## Other Functions
-
-### JSONSchema
-
-▸ **JSONSchema**(`schema`): (`target`: `object` \| `Function`, `key?`: `string`) => `void`
-
-Supplement class or property with additional JSON Schema keywords.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `schema` | [`DecoratorSchema`](modules.md#decoratorschema) | JSON Schema object that is merged into the schema derived from class-validator decorators. In case of conflicts, keywords defined here overwrite the existing ones. Alternatively you can supply a function that receives as parameters the existing schema and global options, returning an updated schema. |
-
-#### Returns
-
-`fn`
-
-▸ (`target`, `key?`): `void`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `target` | `object` \| `Function` |
-| `key?` | `string` |
-
-##### Returns
-
-`void`
-
-#### Defined in
-
-[decorators/JSONSchema.decorator.ts:26](https://github.com/Panenco/papi/blob/894fdec/src/decorators/JSONSchema.decorator.ts#L26)
-
-___
-
-### getMetadataSchema
-
-▸ **getMetadataSchema**(`target`, `key`): [`DecoratorSchema`](modules.md#decoratorschema)
-
-Get the JSON Schema stored in given target's metadata.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `target` | `object` \| `Function` |
-| `key` | `string` |
-
-#### Returns
-
-[`DecoratorSchema`](modules.md#decoratorschema)
-
-#### Defined in
-
-[decorators/JSONSchema.decorator.ts:39](https://github.com/Panenco/papi/blob/894fdec/src/decorators/JSONSchema.decorator.ts#L39)
-
-___
-
-### validationMetadatasToSchemas
-
-▸ **validationMetadatasToSchemas**(`userOptions?`): `Record`<`string`, `SchemaObject`\>
-
-Convert class-validator metadata into JSON Schema definitions.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `userOptions?` | `Partial`<`IOptions`\> |
-
-#### Returns
-
-`Record`<`string`, `SchemaObject`\>
-
-#### Defined in
-
-[jsonschema/index.ts:23](https://github.com/Panenco/papi/blob/894fdec/src/jsonschema/index.ts#L23)
-
-___
-
-### validationMetadataArrayToSchemas
-
-▸ **validationMetadataArrayToSchemas**(`metadatas`, `userOptions?`): `Record`<`string`, `SchemaObject`\>
-
-Convert an array of class-validator metadata into JSON Schema definitions.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `metadatas` | `ValidationMetadata`[] |
-| `userOptions?` | `Partial`<`IOptions`\> |
-
-#### Returns
-
-`Record`<`string`, `SchemaObject`\>
-
-#### Defined in
-
-[jsonschema/index.ts:38](https://github.com/Panenco/papi/blob/894fdec/src/jsonschema/index.ts#L38)
-
-___
-
-### targetConstructorToSchema
-
-▸ **targetConstructorToSchema**(`targetConstructor`, `userOptions?`): `SchemaObject`
-
-Generate JSON Schema definitions from the target object constructor.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `targetConstructor` | `Function` |
-| `userOptions?` | `Partial`<`IOptions`\> |
-
-#### Returns
-
-`SchemaObject`
-
-#### Defined in
-
-[jsonschema/index.ts:85](https://github.com/Panenco/papi/blob/894fdec/src/jsonschema/index.ts#L85)
-
-## Authorization Type Aliases
-
-### IRequirement
-
-Ƭ **IRequirement**: (`request`: `Request`) => `Promise`<`void`\> \| `void`
-
-#### Type declaration
-
-▸ (`request`): `Promise`<`void`\> \| `void`
-
-Authorization definition base type
-
-Implementation should validate required check and throw [Unauthorized](classes/Unauthorized.md) or [Forbidden](classes/Forbidden.md) Exception
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `request` | `Request` |
-
-##### Returns
-
-`Promise`<`void`\> \| `void`
-
-#### Defined in
-
-[authorization/requirement.interface.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/authorization/requirement.interface.ts#L10)
-
-___
-
-## Other Type Aliases
-
-### DecoratorSchema
-
-Ƭ **DecoratorSchema**: `SchemaObject` \| (`source`: `SchemaObject`, `options`: `IOptions`) => `SchemaObject`
-
-Either a plain JSON Schema object that gets merged into the existing schema,
-or a function that receives as parameters the existing schema and global
-options, returning an updated schema.
-
-#### Defined in
-
-[decorators/JSONSchema.decorator.ts:15](https://github.com/Panenco/papi/blob/894fdec/src/decorators/JSONSchema.decorator.ts#L15)
+[utils/middleware/error.middleware.ts:15](https://github.com/Panenco/papi/blob/db78196/src/utils/middleware/error.middleware.ts#L15)

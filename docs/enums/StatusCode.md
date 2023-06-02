@@ -24,108 +24,108 @@ Available status codes
 
 ### ok
 
-• **ok**
+• **ok** = ``200``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:7](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L7)
+[contracts/responses/statusCode.ts:7](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L7)
 
 ___
 
 ### created
 
-• **created**
+• **created** = ``201``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:8](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L8)
+[contracts/responses/statusCode.ts:8](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L8)
 
 ___
 
 ### noContent
 
-• **noContent**
+• **noContent** = ``204``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:9](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L9)
+[contracts/responses/statusCode.ts:9](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L9)
 
 ___
 
 ### badRequest
 
-• **badRequest**
+• **badRequest** = ``400``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L10)
+[contracts/responses/statusCode.ts:10](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L10)
 
 ___
 
 ### unauthorized
 
-• **unauthorized**
+• **unauthorized** = ``401``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:11](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L11)
+[contracts/responses/statusCode.ts:11](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L11)
 
 ___
 
 ### forbidden
 
-• **forbidden**
+• **forbidden** = ``403``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L12)
+[contracts/responses/statusCode.ts:12](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L12)
 
 ___
 
 ### notFound
 
-• **notFound**
+• **notFound** = ``404``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:13](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L13)
+[contracts/responses/statusCode.ts:13](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L13)
 
 ___
 
 ### conflict
 
-• **conflict**
+• **conflict** = ``409``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:14](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L14)
+[contracts/responses/statusCode.ts:14](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L14)
 
 ___
 
 ### tooManyRequests
 
-• **tooManyRequests**
+• **tooManyRequests** = ``429``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:15](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L15)
+[contracts/responses/statusCode.ts:15](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L15)
 
 ___
 
 ### retryWith
 
-• **retryWith**
+• **retryWith** = ``449``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:16](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L16)
+[contracts/responses/statusCode.ts:16](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L16)
 
 ___
 
 ### serverError
 
-• **serverError**
+• **serverError** = ``500``
 
 #### Defined in
 
-[contracts/responses/statusCode.ts:17](https://github.com/Panenco/papi/blob/894fdec/src/contracts/responses/statusCode.ts#L17)
+[contracts/responses/statusCode.ts:17](https://github.com/Panenco/papi/blob/db78196/src/contracts/responses/statusCode.ts#L17)
