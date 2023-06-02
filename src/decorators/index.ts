@@ -1,4 +1,3 @@
-export * from './JSONSchema.decorator';
 export * from './body.decorator';
 export * from './conditionalExpose.decorator';
 export * from './date.decorator';
