@@ -7,16 +7,14 @@ import { importClasses, stringToObject } from '../../utils/helpers';
 
 describe('Unit tests', () => {
   describe('Util tests', () => {
-    before(async () => {});
+    before(async () => undefined);
 
     it('Should import classes', async () => {
       const classes = importClasses([path.join(__dirname, '..', '..', '**', '*.js')]);
 
       expect(classes.length).gt(0);
       const errors = importClasses([path.join(__dirname, '..', '..', '**', '*.error.js')]);
-      const instances = errors
-        .filter(e => e !== ErrorBase && e != ValidationError)
-        .map(e => new e('reason', 'message'));
+      const instances = errors.filter(e => e !== ErrorBase && e != ValidationError).map(e => new e('reason', 'message'));
       instances.forEach(e => {
         expect(e instanceof Error).true;
         expect((e as ErrorBase).reason).equal('reason');
@@ -36,7 +34,7 @@ describe('Unit tests', () => {
 
     it('Error without reason should get constructor name', () => {
       const t = new BadRequest(undefined, 'test');
-      expect(t.reason).equal('HttpError');
+      expect(t.reason).equal('BadRequest');
     });
   });
 });
