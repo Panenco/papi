@@ -19,7 +19,7 @@ Base data for Authorization token data response
 
 #### Defined in
 
-[authorization/accessToken.interface.ts:7](https://github.com/Panenco/papi/blob/db78196/src/authorization/accessToken.interface.ts#L7)
+[authorization/accessToken.interface.ts:7](https://github.com/Panenco/papi/blob/3e3ece6/src/authorization/accessToken.interface.ts#L7)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[authorization/accessToken.interface.ts:8](https://github.com/Panenco/papi/blob/db78196/src/authorization/accessToken.interface.ts#L8)
+[authorization/accessToken.interface.ts:8](https://github.com/Panenco/papi/blob/3e3ece6/src/authorization/accessToken.interface.ts#L8)
