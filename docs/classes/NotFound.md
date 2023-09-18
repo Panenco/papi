@@ -20,7 +20,6 @@ Http error with status code 404
 
 - [code](NotFound.md#code)
 - [reason](NotFound.md#reason)
-- [message](NotFound.md#message)
 - [payload](NotFound.md#payload)
 
 ## Constructors
@@ -43,7 +42,7 @@ Http error with status code 404
 
 #### Defined in
 
-[contracts/errors/notFound.error.ts:9](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/notFound.error.ts#L9)
+[contracts/errors/notFound.error.ts:9](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/notFound.error.ts#L9)
 
 ## Properties
 
@@ -57,7 +56,7 @@ Http error with status code 404
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L9)
 
 ___
 
@@ -71,21 +70,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L11)
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[message](ErrorBase.md#message)
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -99,4 +84,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L11)

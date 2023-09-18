@@ -6,7 +6,7 @@ Base for API Error
 
 ## Hierarchy
 
-- `HttpError`
+- `Error`
 
   ↳ **`ErrorBase`**
 
@@ -30,7 +30,6 @@ Base for API Error
 
 - [code](ErrorBase.md#code)
 - [reason](ErrorBase.md#reason)
-- [message](ErrorBase.md#message)
 - [payload](ErrorBase.md#payload)
 
 ## Constructors
@@ -50,11 +49,11 @@ Base for API Error
 
 #### Overrides
 
-HttpError.constructor
+Error.constructor
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:15](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L15)
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L13)
 
 ## Properties
 
@@ -64,7 +63,7 @@ HttpError.constructor
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L9)
 
 ___
 
@@ -74,21 +73,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L11)
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Overrides
-
-HttpError.message
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -98,4 +83,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/db78196/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/3e3ece6/src/contracts/errors/errorBase.error.ts#L11)
