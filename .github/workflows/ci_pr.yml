@@ -10,19 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
-      - name: Use Node.js v16
-        uses: actions/setup-node@v1
+        uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.3.1
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         env:
           RUNNER_TEMP: '/tmp/'
         with:
-          node-version: 16.x
+          node-version: '18'
+          cache: 'pnpm'
+
       - name: Install
-        run: yarn
+        run: pnpm install
+
       - name: Build
-        run: yarn build
+        run: pnpm run build
+
       - name: Run tests
-        run: yarn coverage
+        run: pnpm run coverage
+
       - name: Comment coverage
         if: always()
         uses: Tintef/nyc-reporter-action@0.2.5
