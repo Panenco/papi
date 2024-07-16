@@ -45,7 +45,7 @@ Base query validator for a sortable paged list
 
 #### Defined in
 
-[contracts/queries/paging.query.ts:16](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/queries/paging.query.ts#L16)
+[contracts/queries/paging.query.ts:16](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/queries/paging.query.ts#L16)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[contracts/queries/paging.query.ts:22](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/queries/paging.query.ts#L22)
+[contracts/queries/paging.query.ts:22](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/queries/paging.query.ts#L22)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[contracts/queries/sort.query.ts:17](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/queries/sort.query.ts#L17)
+[contracts/queries/sort.query.ts:17](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/queries/sort.query.ts#L17)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[contracts/queries/sort.query.ts:22](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/queries/sort.query.ts#L22)
+[contracts/queries/sort.query.ts:22](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/queries/sort.query.ts#L22)

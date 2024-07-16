@@ -23,7 +23,7 @@ Capitalized query order enum
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:7](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/enum/queryOrder.enum.ts#L7)
+[contracts/enum/queryOrder.enum.ts:7](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/enum/queryOrder.enum.ts#L7)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:8](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/enum/queryOrder.enum.ts#L8)
+[contracts/enum/queryOrder.enum.ts:8](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/enum/queryOrder.enum.ts#L8)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:9](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/enum/queryOrder.enum.ts#L9)
+[contracts/enum/queryOrder.enum.ts:9](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/enum/queryOrder.enum.ts#L9)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:10](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/enum/queryOrder.enum.ts#L10)
+[contracts/enum/queryOrder.enum.ts:10](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/enum/queryOrder.enum.ts#L10)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:11](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/enum/queryOrder.enum.ts#L11)
+[contracts/enum/queryOrder.enum.ts:11](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/enum/queryOrder.enum.ts#L11)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[contracts/enum/queryOrder.enum.ts:12](https://github.com/Panenco/papi/blob/dc525ff/src/contracts/enum/queryOrder.enum.ts#L12)
+[contracts/enum/queryOrder.enum.ts:12](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/enum/queryOrder.enum.ts#L12)

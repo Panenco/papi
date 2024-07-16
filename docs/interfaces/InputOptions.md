@@ -25,7 +25,7 @@ https://github.com/pleerock/class-transformer
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:12](https://github.com/Panenco/papi/blob/dc525ff/src/utils/types/transformerOptions.ts#L12)
+[utils/types/transformerOptions.ts:12](https://github.com/Panenco/papi/blob/87ffd59/src/utils/types/transformerOptions.ts#L12)
 
 ___
 
@@ -37,4 +37,4 @@ Extra options to be passed to body-parser middleware.
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:16](https://github.com/Panenco/papi/blob/dc525ff/src/utils/types/transformerOptions.ts#L16)
+[utils/types/transformerOptions.ts:16](https://github.com/Panenco/papi/blob/87ffd59/src/utils/types/transformerOptions.ts#L16)
