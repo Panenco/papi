@@ -18,7 +18,7 @@ import { arrayRepresenter, ClassType, listRepresenter, representer } from 'utils
  * @category Decorator
  */
 export const Representer = (
-  representation: ClassType<any>,
+  representation: ClassType<any> | null,
   statusCode?: number,
   options: {
     contentType?: string;
@@ -56,7 +56,7 @@ export const Representer = (
  * @category Decorator
  */
 export const ListRepresenter = (
-  representation: ClassType<any>,
+  representation: ClassType<any> | null,
   statusCode = 200,
   options: {
     contentType?: string;
@@ -89,7 +89,7 @@ export const ListRepresenter = (
  * @category Decorator
  */
 export const ArrayRepresenter = (
-  representation: ClassType<any>,
+  representation: ClassType<any> | null,
   statusCode = 200,
   options: {
     contentType?: string;
