@@ -29,7 +29,7 @@ Output DTO for HTTP Errors
 
 #### Defined in
 
-[contracts/representations/error.representation.ts:20](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/representations/error.representation.ts#L20)
+[contracts/representations/error.representation.ts:20](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/representations/error.representation.ts#L20)
 
 ## Properties
 
@@ -39,7 +39,7 @@ Output DTO for HTTP Errors
 
 #### Defined in
 
-[contracts/representations/error.representation.ts:14](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/representations/error.representation.ts#L14)
+[contracts/representations/error.representation.ts:14](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/representations/error.representation.ts#L14)
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 #### Defined in
 
-[contracts/representations/error.representation.ts:18](https://github.com/Panenco/papi/blob/87ffd59/src/contracts/representations/error.representation.ts#L18)
+[contracts/representations/error.representation.ts:18](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/representations/error.representation.ts#L18)
