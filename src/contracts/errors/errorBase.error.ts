@@ -1,22 +1,24 @@
 import { StatusCode } from 'contracts';
-import { HttpError } from 'routing-controllers';
 
 /**
  * Base for API Error
  *
  * @category Error
  */
-export class ErrorBase extends HttpError {
+export class ErrorBase extends Error {
   public code: number;
   public reason: string;
-  public message: string;
   public payload?: object;
 
   constructor(code: StatusCode, reason: string, message: string, payload?: object) {
-    super(code, message);
+    super(message);
+    this.name = this.constructor.name;
     this.code = code;
     this.reason = reason || this.constructor.name;
-    this.message = message;
     this.payload = payload;
+
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, this.constructor);
+    }
   }
 }

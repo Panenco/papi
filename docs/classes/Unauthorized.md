@@ -12,72 +12,15 @@ Http error with status code 401
 
 ## Table of contents
 
-### Properties
-
-- [code](Unauthorized.md#code)
-- [reason](Unauthorized.md#reason)
-- [message](Unauthorized.md#message)
-- [payload](Unauthorized.md#payload)
-
 ### Constructors
 
 - [constructor](Unauthorized.md#constructor)
 
-## Properties
+### Properties
 
-### code
-
-• **code**: `number`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[code](ErrorBase.md#code)
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L10)
-
-___
-
-### reason
-
-• **reason**: `string`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[reason](ErrorBase.md#reason)
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L11)
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[message](ErrorBase.md#message)
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L12)
-
-___
-
-### payload
-
-• `Optional` **payload**: `object`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[payload](ErrorBase.md#payload)
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L13)
+- [code](Unauthorized.md#code)
+- [reason](Unauthorized.md#reason)
+- [payload](Unauthorized.md#payload)
 
 ## Constructors
 
@@ -99,4 +42,46 @@ ___
 
 #### Defined in
 
-[contracts/errors/unauthorized.error.ts:9](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/unauthorized.error.ts#L9)
+[contracts/errors/unauthorized.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/unauthorized.error.ts#L9)
+
+## Properties
+
+### code
+
+• **code**: `number`
+
+#### Inherited from
+
+[ErrorBase](ErrorBase.md).[code](ErrorBase.md#code)
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L9)
+
+___
+
+### reason
+
+• **reason**: `string`
+
+#### Inherited from
+
+[ErrorBase](ErrorBase.md).[reason](ErrorBase.md#reason)
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L10)
+
+___
+
+### payload
+
+• `Optional` **payload**: `object`
+
+#### Inherited from
+
+[ErrorBase](ErrorBase.md).[payload](ErrorBase.md#payload)
+
+#### Defined in
+
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L11)

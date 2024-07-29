@@ -4,7 +4,7 @@
 
 Options to be passed during transformation.
 
-**`inheritdoc`**
+**`Inherit Doc`**
 
 ## Hierarchy
 
@@ -35,4 +35,4 @@ ClassTransformOptions.exposeUnsetFields
 
 #### Defined in
 
-[utils/types/transformerOptions.ts:30](https://github.com/Panenco/papi/blob/894fdec/src/utils/types/transformerOptions.ts#L30)
+[utils/types/transformerOptions.ts:30](https://github.com/Panenco/papi/blob/5bcfd4f/src/utils/types/transformerOptions.ts#L30)

@@ -22,7 +22,6 @@ Http error with status code 400
 
 - [code](BadRequest.md#code)
 - [reason](BadRequest.md#reason)
-- [message](BadRequest.md#message)
 - [payload](BadRequest.md#payload)
 
 ## Constructors
@@ -45,7 +44,7 @@ Http error with status code 400
 
 #### Defined in
 
-[contracts/errors/badRequest.error.ts:9](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/badRequest.error.ts#L9)
+[contracts/errors/badRequest.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/badRequest.error.ts#L9)
 
 ## Properties
 
@@ -59,7 +58,7 @@ Http error with status code 400
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L9)
 
 ___
 
@@ -73,21 +72,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L11)
-
-___
-
-### message
-
-• **message**: `string`
-
-#### Inherited from
-
-[ErrorBase](ErrorBase.md).[message](ErrorBase.md#message)
-
-#### Defined in
-
-[contracts/errors/errorBase.error.ts:12](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L12)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -101,4 +86,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/894fdec/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L11)
