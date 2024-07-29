@@ -53,7 +53,7 @@ Error.constructor
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L13)
+[contracts/errors/errorBase.error.ts:13](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L13)
 
 ## Properties
 
@@ -63,7 +63,7 @@ Error.constructor
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L9)
+[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L9)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -83,4 +83,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L11)

@@ -44,7 +44,7 @@ Http error with status code 400
 
 #### Defined in
 
-[contracts/errors/badRequest.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/badRequest.error.ts#L9)
+[contracts/errors/badRequest.error.ts:9](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/badRequest.error.ts#L9)
 
 ## Properties
 
@@ -58,7 +58,7 @@ Http error with status code 400
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L9)
+[contracts/errors/errorBase.error.ts:9](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L9)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L10)
+[contracts/errors/errorBase.error.ts:10](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L10)
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/5bcfd4f/src/contracts/errors/errorBase.error.ts#L11)
+[contracts/errors/errorBase.error.ts:11](https://github.com/Panenco/papi/blob/1848616/src/contracts/errors/errorBase.error.ts#L11)
