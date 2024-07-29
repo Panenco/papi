@@ -11,8 +11,9 @@ import { ClassType } from 'utils';
  */
 export const representer =
   <T>(representationType: ClassType<T>) =>
-  (_: Action, content: any | [any[], number]) => {
-    return plainToInstance(representationType, (content as any)?.toJSON?.() ?? content, {
+    (_: Action, content: any | [any[], number]) => {
+      const serializable = content as any;
+    return plainToInstance(representationType, serializable?.toPOJO?.() ?? serializable?.toJSON?.() ?? content, {
       exposeUnsetFields: false,
     });
   };

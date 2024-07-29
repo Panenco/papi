@@ -14,7 +14,8 @@ export const listRepresenter =
   <T>(representationType: ClassType<T>) =>
   (_: Action, content: [any[], number]) => {
     const [items, count] = content;
-    const objects = items.map(item => item?.toJSON?.() ?? item);
+      const serializable = content as any;
+    const objects = items.map(item => serializable?.toPOJO?.() ?? serializable?.toJSON?.() ?? item);
     const representation = new ListRepresentation(count, objects);
     const listRepresentation = createListRepresentation(representationType);
     return plainToInstance(listRepresentation, representation, { exposeUnsetFields: false });
